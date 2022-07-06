@@ -5,7 +5,7 @@ import home from "../public/media/img/home.svg";
 import phone from "../public/media/img/phone.svg";
 import Link from "next/link";
 
-function contatti() {
+function Contatti() {
   useEffect(() => {
     document.title = "Contatti - Consenergy";
   });
@@ -164,4 +164,4 @@ function contatti() {
   );
 }
 
-export default contatti;
+export default Contatti;
