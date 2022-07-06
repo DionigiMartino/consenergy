@@ -1,0 +1,142 @@
+@import "../variables";
+
+.cont__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_menu {
+    width: 75%;
+    max-width: $max_screenWidth;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    z-index: 9999;
+    transform: translateY(35%);
+
+    &_button {
+      width: 45px;
+      height: 40px;
+      border: 1.5px solid rgba(124, 124, 124, 0.617);
+      box-shadow: 0px 0px 2px #1d1d1d7f;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5px;
+      background: transparent;
+      transition: background 0.8s;
+      cursor: pointer;
+
+      &:hover {
+        background: $main_color;
+        border: 1px solid $main_color;
+
+        & > div > div {
+          width: 100% !important;
+          background-color: #fff;
+        }
+      }
+
+      & > div {
+        width: 75%;
+
+        & > div {
+          width: 75%;
+          border-radius: 15px;
+          background-color: $main_color;
+          height: 2.5px;
+          border-radius: 15px;
+          transition: background-color 0.8s, width 0.8s;
+        }
+
+        &:first-of-type > div {
+          width: 100%;
+        }
+
+        &:last-of-type > div {
+          width: 50%;
+        }
+      }
+    }
+
+    &_logo {
+      width: 10%;
+      height: 40px;
+      border-radius: 15px;
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        filter: drop-shadow(5px 5px 5px hsl(0deg 0% 0% / 0.5));
+      }
+    }
+
+    &_inside {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &[id="cta"] {
+        margin-left: auto;
+        gap: 15px;
+
+        & > li {
+          padding: 10px;
+          border-radius: 5px;
+          border: 0.8px solid $main_color;
+          cursor: pointer;
+
+          & > a {
+            color: $main_color;
+          }
+
+          &:last-of-type {
+            background-color: $main_color;
+            border-radius: 5px;
+            transition: background-color 0.8s;
+
+            &:hover {
+              background-color: $secondary_color;
+              border: 0.8px solid $secondary_color;
+            }
+
+            & > a {
+              color: #fff;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      & > li {
+        padding: 5px 10px;
+        transition: background-color 0.8s;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > a {
+          color: #1d1d1d;
+          font-size: 14px;
+          font-weight: 400;
+          transition: color 0.8s;
+        }
+
+        &:hover {
+          background-color: $main_color;
+
+          & > a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

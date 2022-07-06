@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+import Header from "../src/components/Header";
+import "../styles/globals.css";
+import Footer from "../src/components/Footer";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = (props) => {
+  const { Component, pageProps } = props;
 
-export default MyApp
+  return (
+    <>
+      <Header />
+      <div className="container">
+        <Component {...pageProps} />
+      </div>
+
+      <Footer />
+    </>
+  );
+};
+
+export default MyApp;
