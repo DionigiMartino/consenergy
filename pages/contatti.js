@@ -24,7 +24,7 @@ function contatti() {
           </li>
           <li>
             <img src={home} alt="Sede" />
-            Via Antonio Gramsci 10, presso Parco il Boschetto Sant'Anastasia
+            Via Antonio Gramsci 10, presso Parco il Boschetto {"Sant'Anastasia"}
           </li>
           <li>
             <img src={phone} alt="Sede" />
