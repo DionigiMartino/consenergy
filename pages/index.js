@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Consenergy - I tuoi consulenti per l'energia</title>
+        <title>Consenergy - I tuoi consulenti per {"l'energia"}</title>
         <meta
           name="description"
           content="La nostra Società, vanta un’esperienza consolidata nel mercato dell’energia, specialistica nel settore delle energie rinnovabili e dell’efficienza energetica, riconosciuta come Energy Service Company–Esco. Offre i propri servizi professionali per lo sviluppo ed il sostegno economico dei piani di sviluppo aziendale dei propri Clienti, costituiti principalmente da: Utenti business e residenziali, produttori di energia, investitori istituzionali (fondi di investimento e banche finanziatrici), aziende fornitrici di EPC. Grazie alle competenze multidisciplinari dei suoi professionisti, l’accreditamento presso gli enti e le istituzioni competenti, la Società si propone di diventare uno «sportello unico» di fiducia per i propri Clienti, su tutti gli aspetti legati alla gestione dell’energia, ai meccanismi di incentivazione e alla costruzione ed esercizio di sistemi energetici, anche complessi."
@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className={introModule.cont__intro}>
         <div className={introModule.cont__intro_company}>
-          <h1>Consenergy - I tuoi consulenti per l'energia</h1>
+          <h1>Consenergy - I tuoi consulenti per {"l'energia"}</h1>
           <h3>
             La nostra Società, vanta un’esperienza consolidata nel mercato
             dell’energia, specialistica nel settore delle energie rinnovabili e
