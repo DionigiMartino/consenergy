@@ -145,7 +145,7 @@ function Footer() {
               <Link href="/">Mercato del Gas</Link>
             </li>
             <li>
-              <Link href="/">Mercato {"dell'energia"}</Link>
+              <Link href="/">Mercato Energetico</Link>
             </li>
           </ul>
 

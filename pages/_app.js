@@ -8,6 +8,7 @@ const MyApp = (props) => {
   return (
     <>
       <Header />
+      
       <div className="container">
         <Component {...pageProps} />
       </div>
