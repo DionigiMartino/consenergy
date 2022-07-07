@@ -3,7 +3,7 @@ import chiSiamo from "../src/style/output/chisiamo.module.css";
 import axpoLogo from '../public/media/img/axpo.svg'
 import dufercoLogo from "../public/media/img/duferco.jpeg";
 import bukheLogo from "../public/media/img/bukhe.svg";
-import microBeesLogo from "../public/media/img/microBees.svg";
+import microBeesLogo from "../public/media/img/microbees.svg";
 
 
 function Azienda() {
