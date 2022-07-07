@@ -1,0 +1,71 @@
+.cont__servizi {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0;
+}
+.cont__servizi_list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cont__servizi_list > li {
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #6200ff;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.8s, background-color 0.8s;
+}
+.cont__servizi_list > li[id=active] {
+  background-color: #6200ff;
+  color: #fff;
+}
+.cont__servizi_list > li:hover {
+  background-color: #6200ff;
+  color: #fff;
+}
+.cont__servizi > section {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont__servizi > section > ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cont__servizi > section > ul > li {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #6200ff;
+}
+.cont__servizi > section > ul > li > svg {
+  fill: #6200ff;
+}
+.cont__servizi > section > svg {
+  width: 50px;
+  height: 50px;
+  fill: #6200ff;
+}
+.cont__servizi > section > p {
+  color: #1d1d1d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.cont__servizi > section > p:last-of-type {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=servizi.module.css.map */

@@ -42,7 +42,7 @@ function Header() {
           </li>
 
           <li>
-            <Link href="/prodotti">Prodotti</Link>
+            <Link href="/notizie">Notizie</Link>
           </li>
         </ul>
 

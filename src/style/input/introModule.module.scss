@@ -10,9 +10,8 @@
   &_company {
     width: 70%;
     height: 65%;
-    background-color: $main_color;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
-      linear-gradient(to right top, #fff, #fff, #fff, #fff, #fff);
+    background-position: center;
+    background-size: cover;
     padding: 10px 35px;
     border-radius: 10px;
     display: flex;
@@ -25,13 +24,12 @@
     & > h1 {
       font-weight: 500;
       font-size: 36px;
-      -webkit-text-stroke: 1px $secondary_color;
       color: #fff;
       margin-bottom: unset;
     }
 
     & > h3 {
-      color: $secondary_color;
+      color: #fff;
       width: 75%;
       font-weight: 500;
       line-height: 25px;
@@ -57,9 +55,45 @@
   &_info {
     width: 28%;
     height: 65%;
-    background-color: orange;
+    background-position: center;
+    background-size: cover;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px 3px #1d1d1d6a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > h2 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    & > p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    & > a {
+      background-color: $secondary_color;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+      font-size: 13px;
+      text-transform: uppercase;
+      transition: background-color 0.8s;
+      margin-top: auto;
+      margin-bottom: 15%;
+
+      &:hover {
+        background-color: $main_color;
+      }
+    }
   }
 
   &_perks {

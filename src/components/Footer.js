@@ -121,7 +121,7 @@ function Footer() {
               <Link href="/">Risparmio Energetico</Link>
             </li>
             <li>
-              <Link href="/">Canaline Elettriche</Link>
+              <Link href="/">Colonnine Elettriche</Link>
             </li>
           </ul>
 
@@ -139,13 +139,13 @@ function Footer() {
             <li>Agevolazioni</li>
 
             <li>
-              <Link href="/">Accise Agevolate</Link>
+              <Link href="media/docs/ACCISEAGEVOLATE.pdf">Accise Agevolate</Link>
             </li>
             <li>
-              <Link href="/">Mercato del Gas</Link>
+              <Link href="media/docs/ILMERCATODELGAS.pptx">Mercato del Gas</Link>
             </li>
             <li>
-              <Link href="/">Mercato Energetico</Link>
+              <Link href="media/docs/ILMERCATOENERGETICO.pptx">Mercato Energetico</Link>
             </li>
           </ul>
 
