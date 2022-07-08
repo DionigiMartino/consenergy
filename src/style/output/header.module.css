@@ -111,7 +111,7 @@
 }
 @media (max-width: 780px) {
   .cont__header_menu_logo {
-    width: fit-content;
+    width: 75px;
   }
 }
 .cont__header_menu_logo > img {
