@@ -46,6 +46,11 @@
   font-weight: 500;
   line-height: 25px;
 }
+@media (max-width: 780px) {
+  .cont__intro_company > h3 {
+    width: 85%;
+  }
+}
 .cont__intro_company > a {
   background-color: #009245;
   border-radius: 10px;
