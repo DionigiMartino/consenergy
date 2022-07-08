@@ -37,6 +37,7 @@
   transition: left 0.8s;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  box-shadow: 0px 3px 3px rgba(29, 29, 29, 0.5921568627);
 }
 .cont__header_menu_mobile > button {
   border: none;
