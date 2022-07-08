@@ -16,13 +16,18 @@
     background-color: $secondary_color;
 
     & > p {
-        color: #fff;
-        font-size: 14px;
-        letter-spacing: 1px;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 1px;
 
-        & > a {
-            text-decoration: underline;
-        }
+  @media(max-width: 780px){
+    text-align: center;
+  }
+
+
+      & > a {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -33,6 +38,11 @@
     align-items: flex-start;
     gap: 50px;
 
+    @media (max-width: 780px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
     &_menu {
       width: 70%;
       display: flex;
@@ -40,7 +50,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 10px;
-      
+
+      @media (max-width: 780px) {
+        width: 85%;
+        margin: 0 auto;
+      }
+
       & > ul {
         width: fit-content;
         min-height: 200px;
@@ -49,6 +64,10 @@
         align-items: flex-start;
         gap: 15px;
         margin-top: unset;
+
+        @media (max-width: 780px) {
+          width: 45%;
+        }
 
         & > li {
           color: #1d1d1d;
@@ -77,6 +96,10 @@
       flex-direction: column;
       align-items: center;
       gap: 15px;
+
+      @media (max-width: 780px) {
+        width: 100%;
+      }
 
       &_logo {
         width: 75%;

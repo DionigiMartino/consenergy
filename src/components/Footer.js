@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import footerStyle from "../style/output/footer.module.css";
 import logo from "../../public/media/img/logoconsenergy.jpeg";
 import Link from "next/link";
+import AppContext from "../../context/context";
 
 function Footer() {
+  const {setService} = useContext(AppContext)
+
   return (
     <footer className={footerStyle.cont__footer}>
       <div className={footerStyle.cont__footer_inside}>
@@ -111,17 +114,17 @@ function Footer() {
         <div className={footerStyle.cont__footer_inside_menu}>
           <ul>
             <li>Servizi</li>
-            <li>
-              <Link href="/">Fotovoltaico</Link>
+            <li onClick={() => setService("1")}>
+              <Link href="/servizi">Fotovoltaico</Link>
             </li>
-            <li>
-              <Link href="/">Impianti Solare Termico</Link>
+            <li onClick={() => setService("2")}>
+              <Link href="/servizi">Impianti Solare Termico</Link>
             </li>
-            <li>
-              <Link href="/">Risparmio Energetico</Link>
+            <li onClick={() => setService("3")}>
+              <Link href="/servizi">Risparmio Energetico</Link>
             </li>
-            <li>
-              <Link href="/">Colonnine Elettriche</Link>
+            <li onClick={() => setService("4")}>
+              <Link href="/servizi">Colonnine Elettriche</Link>
             </li>
           </ul>
 

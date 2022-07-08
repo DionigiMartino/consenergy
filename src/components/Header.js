@@ -1,13 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import headerStyle from "../style/output/header.module.css";
 import Link from "next/link";
 import logo from "../../public/media/img/logoconsenergy.jpeg";
 
 function Header() {
+  const [open, openMenu] = useState(false);
+
   return (
     <div className={headerStyle.cont__header}>
+      <ul
+        className={headerStyle.cont__header_menu_mobile}
+        style={{ left: open ? "0" : "-100%" }}
+      >
+        <li onClick={() => openMenu(false)}>
+          <Link href="/azienda">Azienda</Link>
+        </li>
+
+        <li onClick={() => openMenu(false)}>
+          <Link href="/servizi">Servizi</Link>
+        </li>
+
+        <li onClick={() => openMenu(false)}>
+          <Link href="media/docs/ACCISEAGEVOLATE.pdf">Accise Agevolate</Link>
+        </li>
+        <li onClick={() => openMenu(false)}>
+          <Link href="media/docs/ILMERCATODELGAS.pptx">Mercato del Gas</Link>
+        </li>
+        <li onClick={() => openMenu(false)}>
+          <Link href="media/docs/ILMERCATOENERGETICO.pptx">
+            Mercato Energetico
+          </Link>
+        </li>
+
+        <li onClick={() => openMenu(false)}>
+          <Link href="/notizie">Notizie</Link>
+        </li>
+
+        <li id="cta" onClick={() => openMenu(false)}>
+          <Link href="/contatti">Richiedi un preventivo</Link>
+        </li>
+
+        <li id="cta" onClick={() => openMenu(false)}>
+          <Link href="/lavora-con-noi">Lavora con Noi</Link>
+        </li>
+
+        <button onClick={() => openMenu(false)}>X</button>
+      </ul>
       <nav className={headerStyle.cont__header_menu}>
-        <button className={headerStyle.cont__header_menu_button}>
+        <button
+          className={headerStyle.cont__header_menu_button}
+          onClick={() => openMenu(open ? false : true)}
+        >
           <div>
             <div></div>
           </div>
@@ -37,8 +80,26 @@ function Header() {
             <Link href="/servizi">Servizi</Link>
           </li>
 
-          <li>
-            <Link href="/agevolazioni-fiscali">Agevolazioni Fiscali</Link>
+          <li id="dropdown">
+            <Link href="/">Agevolazioni Fiscali</Link>
+
+            <ul>
+              <li>
+                <Link href="media/docs/ACCISEAGEVOLATE.pdf">
+                  Accise Agevolate
+                </Link>
+              </li>
+              <li>
+                <Link href="media/docs/ILMERCATODELGAS.pptx">
+                  Mercato del Gas
+                </Link>
+              </li>
+              <li>
+                <Link href="media/docs/ILMERCATOENERGETICO.pptx">
+                  Mercato Energetico
+                </Link>
+              </li>
+            </ul>
           </li>
 
           <li>
