@@ -6,7 +6,7 @@ import backgroundImpianto from "../public/media/img/impianto_solare_termico.jpeg
 import backgroundRisparmio from "../public/media/img/risparmio.jpeg";
 import backgroundColonne from "../public/media/img/colonne.jpeg";
 
-function servizi() {
+function Servizi() {
   useEffect(() => {
     document.title = "Servizi - Consenergy";
   }, []);
@@ -230,17 +230,17 @@ function servizi() {
 
           <p>
             In tema di risparmio energetico un riferimento obbligato è alle
-            Società di servizi energetici (nell'acronimo inglese ESCO - ossia
+            Società di servizi energetici ({"nell'acronimo"} inglese ESCO - ossia
             Energy Service Companies), realtà imprenditoriali (per la massima
             parte costituite sotto forma di società di capitali) che si occupano
-            dell'attuazione di misure di efficienza energetica (ossia interventi
+            {"dell'attuazione"} di misure di efficienza energetica (ossia interventi
             tesi al raggiungimento di una riduzione dei consumi negli usi finali
-            dell'energia da parte degli utenti).
+            {"dell'energia"} da parte degli utenti).
           </p>
 
           <p>
             Premesso il compito principale delle ESCO (realizzazione di misure
-            di aumento dell'efficienza energetica) è da notare che il valore
+            di aumento {"dell'efficienza"} energetica) è da notare che il valore
             aggiunto di tali società è quello di fornire un punto di riferimento
             unico per la realizzazione di interventi che richiedono una grande
             varietà di competenze, direttamente dipendenti (al di là della fase
@@ -259,8 +259,8 @@ function servizi() {
             capacità {"dell'intervento"} di generare il ritorno degli
             investimenti effettuati nel periodo previsto (pay back period). Tale
             finanziamento prende il nome di Finanziamento tramite terzi (FTT o
-            anche, nell'acronimo inglese, Third Part Financing - TPF) ed è stato
-            inserito nell'ordinamento italiano per la prima volta con il d.lgs.
+            anche, {"nell'acronimo"} inglese, Third Part Financing - TPF) ed è stato
+            inserito {"nell'ordinamento"} italiano per la prima volta con il d.lgs.
             n. 115/2008, il quale lo definisce come energetica, che fornisce i
             capitali per tale misura e addebita al beneficiario un canone pari a
             una parte del risparmio energetico conseguito avvalendosi della
@@ -277,9 +277,9 @@ function servizi() {
             Performance Contract (EPC). Sebbene le tipologie contrattuali adatte
             a regolare gli interventi realizzati in tale settore siano
             molteplici, dal punto di vista pratico la struttura basilare di
-            un'operazione di efficientamento condotta attraverso una ESCO
+            {"un'operazione"} di efficientamento condotta attraverso una ESCO
             dovrebbe avere generalmente le seguenti caratteristiche: utente
-            {"dell'intervento"} affida l'audit energetico, la progettazione e la
+            {"dell'intervento"} affida {"l'audit"} energetico, la progettazione e la
             realizzazione degli interventi alla ESCO, dovendo interloquire in
             tal modo con un unico soggetto e si impegna a pagare alla ESCO una
             somma pari alla spesa storica (di norma {"dell'ultimo"} triennio)
@@ -405,4 +405,4 @@ function servizi() {
   );
 }
 
-export default servizi;
+export default Servizi;
