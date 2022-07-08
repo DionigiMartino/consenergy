@@ -18,6 +18,7 @@
     @media (max-width: 780px) {
       width: 85%;
       justify-content: space-between;
+      max-width: unset;
     }
 
     &_mobile {
