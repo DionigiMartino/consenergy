@@ -8,6 +8,8 @@ import Intro from "../src/components/Intro";
 
 export default function Home() {
   const [section, setSection] = useState("1");
+  const [sectionNew, setSectionNew] = useState("1");
+  const [sectionThird, setSectionThird] = useState("1");
 
   return (
     <div className={styles.container}>
@@ -35,7 +37,7 @@ export default function Home() {
             onClick={() => setSection("2")}
             id={section == "2" ? "active" : null}
           >
-            Impianto Solare Termico
+            Cogenerazione
           </li>
 
           <li
@@ -50,6 +52,13 @@ export default function Home() {
             id={section == "4" ? "active" : null}
           >
             Colonnine Elettriche
+          </li>
+
+          <li
+            onClick={() => setSection("5")}
+            id={section == "5" ? "active" : null}
+          >
+            Fornitura Elettrica
           </li>
         </ul>
 
@@ -90,71 +99,51 @@ export default function Home() {
           <p>
             La nostra azienda, dopo aver studiato attentamente i consumi ed il
             profilo energetico del cliente, sviluppa un progetto preliminare
-            completo di business plan con {"l’indicazione"} del vantaggio economico
-            perseguibile grazie al risparmio ottenuto ed ai benefici fiscali
-            legati ad ogni singolo intervento.
+            completo di business plan con {"l’indicazione"} del vantaggio
+            economico perseguibile grazie al risparmio ottenuto ed ai benefici
+            fiscali legati ad ogni singolo intervento.
           </p>
         </section>
 
         <section style={{ display: section == "2" ? "flex" : "none" }}>
           <p>
-            Con il termine SOLARI TERMICI si identificano in gergo tecnico
-            quelli che sono comunemente denominati pannelli solari termici,
-            ovvero quei dispositivi utilizzati per la conversione della
-            radiazione solare in energia termica, che viene poi trasferita verso
-            un accumulatore termico per essere successivamente sfruttata per un
-            uso ulteriore:
-          </p>
-
-          <ul>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path d="M11 44q-1.25 0-2.125-.875T8 41V12q0-3.3 2.35-5.65Q12.7 4 16 4h16q3.3 0 5.65 2.35Q40 8.7 40 12v29q0 1.25-.875 2.125T37 44Zm0-8.5V41h26v-5.5q-1.5 0-2.65 1t-3.85 1q-2.7 0-3.775-1-1.075-1-2.725-1-1.65 0-2.725 1-1.075 1-3.775 1t-3.775-1q-1.075-1-2.725-1Zm6.5-1q1.65 0 2.725-1 1.075-1 3.775-1t3.85 1q1.15 1 2.65 1t2.65-1q1.15-1 3.85-1V12q0-2.1-1.45-3.55Q34.1 7 32 7H16q-2.1 0-3.55 1.45Q11 9.9 11 12v20.5q2.7 0 3.775 1 1.075 1 2.725 1Zm6.75-4.6q-3.3 0-5.75-2.175t-2.45-5.575q0-1.15.325-2.375t1.175-2.425q.15-.25.425-.4.275-.15.625-.15.2 0 .3.125.1.125.1.275-.05.3-.075.575-.025.275-.025.525 0 1.5.625 2.625t1.125 1.125q.3 0 .425-.2t.125-.45q0-.25-.1-.575-.1-.325-.25-.825-.1-.4-.2-.975t-.1-1.325q0-2.7 1.225-4.625Q23 11.15 25.25 10.15q.2-.1.275-.125Q25.6 10 25.75 10q.15 0 .225.1.075.1.025.25-.2.55-.275.975-.075.425-.075.975 0 1.6.875 2.85t2.325 2.25q1.55 1.05 2 2.575.45 1.525.45 3.125 0 2.55-1.75 4.675t-5.3 2.125Zm.05-3q1.75 0 2.875-1t1.125-2.7q0-1.1-.35-1.95-.35-.85-1.1-1.65-.55-.55-1.175-1.15-.625-.6-1.075-1.3-.7.5-.925 1.5-.225 1 .025 2.25.1.55.15 1.025.05.475.05.875 0 1.15-.95 1.975-.95.825-1.85.975.45.4 1.3.775.85.375 1.9.375ZM24 24Z" />
-              </svg>
-              Produzione di Acqua Calda
-            </li>
-
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path d="M40.5 13.5q-.65 0-1.075-.425Q39 12.65 39 12V5.5q0-.65.425-1.075Q39.85 4 40.5 4q.65 0 1.075.425Q42 4.85 42 5.5V12q0 .65-.425 1.075-.425.425-1.075.425Zm0 6q-.6 0-1.05-.45Q39 18.6 39 18q0-.65.45-1.075.45-.425 1.05-.425.65 0 1.075.425Q42 17.35 42 18q0 .6-.425 1.05-.425.45-1.075.45ZM20 44q-5.85 0-9.925-4.075Q6 35.85 6 30q0-3.15 1.4-5.775Q8.8 21.6 11.95 18.3q3.35-3.5 3.925-6.625Q16.45 8.55 16.35 4q8.15 5.05 12.9 12.075Q34 23.1 34 30q0 5.85-4.075 9.925Q25.85 44 20 44Zm0-3q1.25 0 2.4-.95t1.15-3q0-1.3-.775-3.425T20 28.95q-1.9 2.45-2.675 4.625-.775 2.175-.775 3.475.05 2 1.15 2.975Q18.8 41 20 41Zm-6.25-1.8q-.55-2.9.725-6.525Q15.75 29.05 18.9 25.75q.25-.25.55-.375.3-.125.55-.125.3 0 .575.125.275.125.525.375 2.55 2.7 4.3 6.275t.95 7.175q1.85-1.3 3.25-3.8T31 30q0-3.1-1.15-6.075t-2.875-5.6q-1.725-2.625-3.8-4.85Q21.1 11.25 19.25 9.7 19 13 17.7 15.475q-1.3 2.475-3.8 5.175-2.55 2.75-3.725 4.75Q9 27.4 9 30q0 2.85 1.325 5.225Q11.65 37.6 13.75 39.2Z" />
-              </svg>
-              Riscaldamento degli ambienti
-            </li>
-
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-                <path d="M24 9.5q-.65 0-1.075-.425Q22.5 8.65 22.5 8V3.5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075V8q0 .65-.425 1.075Q24.65 9.5 24 9.5Zm10.25 4.25q-.45-.45-.45-1.05 0-.6.45-1.05l3.15-3.2Q37.85 8 38.475 8t1.075.45Q40 8.9 40 9.5q0 .6-.45 1.05l-3.2 3.2q-.45.45-1.05.45-.6 0-1.05-.45ZM40 25.5q-.65 0-1.075-.425Q38.5 24.65 38.5 24q0-.65.425-1.075Q39.35 22.5 40 22.5h4.5q.65 0 1.075.425Q46 23.35 46 24q0 .65-.425 1.075-.425.425-1.075.425ZM24 46q-.65 0-1.075-.425-.425-.425-.425-1.075V40q0-.65.425-1.075Q23.35 38.5 24 38.5q.65 0 1.075.425.425.425.425 1.075v4.5q0 .65-.425 1.075Q24.65 46 24 46ZM11.65 13.75l-3.2-3.15Q8 10.15 8 9.525t.45-1.075Q8.9 8 9.5 8q.6 0 1.05.45l3.2 3.2q.45.45.45 1.05 0 .6-.45 1.05-.45.4-1.075.4t-1.025-.4Zm25.8 25.8-3.2-3.2q-.45-.45-.45-1.05 0-.6.45-1.05.4-.4 1.025-.4.625 0 1.075.4l3.25 3.15q.45.45.425 1.075Q40 39.1 39.6 39.55q-.45.45-1.075.45t-1.075-.45ZM3.5 25.5q-.65 0-1.075-.425Q2 24.65 2 24q0-.65.425-1.075Q2.85 22.5 3.5 22.5H8q.65 0 1.075.425Q9.5 23.35 9.5 24q0 .65-.425 1.075Q8.65 25.5 8 25.5Zm4.95 14.05Q8 39.1 8 38.5q0-.6.45-1.05l3.2-3.2q.4-.4 1.025-.4.625 0 1.075.4.45.45.45 1.075t-.45 1.075l-3.15 3.15q-.45.45-1.075.45t-1.075-.45ZM24 36q-5 0-8.5-3.5T12 24q0-5 3.5-8.5T24 12q5 0 8.5 3.5T36 24q0 5-3.5 8.5T24 36Zm0-3q3.75 0 6.375-2.625T33 24q0-3.75-2.625-6.375T24 15q-3.75 0-6.375 2.625T15 24q0 3.75 2.625 6.375T24 33Z" />
-              </svg>
-              Raffrescamento Solare
-            </li>
-          </ul>
-
-          <p>
-            Collettori sanitari termici sono infatti utilizzati principalmente
-            per aumentare {"l’efficienza"} energetica e ridurre i consumi di gas
-            combustibile utilizzato nella produzione di acqua calda sanitaria o
-            per il riscaldamento di abitazioni, uffici e negozi. Vengono
-            indicati come collettori solari termici, dunque, tutti quei
-            dispositivi in grado di “raccogliere” luce e calore e trasformarli
-            in altre forme di energia, come accade in natura con le piante e la
-            fotosintesi clorofilliana! <br />I collettori solari di cui si
-            compone un impianto solare termico possono essere di tre diversi
-            tipi, a seconda della tecnologia utilizzata:
+            La cogenerazione è la produzione combinata di energia elettrica ed
+            energia termica a partire da un’unica fonte di energia primaria. Un
+            impianto di cogenerazione, dunque, fornisce sia elettricità che
+            calore, garantendo una migliore resa energetica rispetto alle due
+            produzioni separate
           </p>
 
           <p>
-            • Un primo tipo sono i collettori solari scoperti, ovvero dei
-            semplici tubi realizzate in materiale plastico ed esposti alla luce
-            del sole che, sfruttando questa esposizione, surriscaldano il
-            liquido al loro interno. <br />
-            <br /> • Un secondo tipo sono i collettori solari piani vetrati, in
-            cui la radiazione solare viene assorbita da un collettore piano
-            metallico e trasmessa al liquido che scorre nei condotti situati
-            nella parte inferiore del pannello. <br />
-            <br /> • Un terzo tipo sono i collettori solari sottovuoto, formati
-            da alcune tubazioni collocate in condotti di vetro sottovuoto e
-            ricoperte da un materiale particolare che assorbe la radiazione
-            solare.
+            Comprendere il funzionamento di un impianto di cogenerazione
+            richiede di sapere come avviene tradizionalmente la produzione di
+            energia elettrica. In una centrale termoelettrica convenzionale si
+            brucia del combustibile in una fornace per portare a ebollizione
+            {"dell’acqua"} e produrre così vapore. Il vapore mette in moto una
+            turbina, che a sua volta aziona un generatore, il quale produce
+            elettricità. Il problema è che nel corso del processo gran parte
+            {"dell’energia"} termica iniziale va perduta, per cui solo il 30-55%
+            viene effettivamente convertita in energia elettrica. Il resto
+            finisce disperso come calore nell’ambiente.
+          </p>
+
+          <p>
+            In un impianto di cogenerazione, invece, la maggior parte di quel
+            calore viene recuperato e utilizzato per altri scopi (riscaldamento,
+            produzione di acqua calda sanitaria, forza meccanica, generazione
+            secondaria di elettricità). In questo modo la resa energetica
+            complessiva sale al 65-90%. Di solito gli impianti di cogenerazione
+            più piccoli (fino a 2 MW) hanno al posto della turbina un motore a
+            combustione interna (essenzialmente simile a quelli di auto e
+            camion) ma lo schema di funzionamento non cambia (con scambiatori di
+            calore che recuperano il calore dai fumi di scarico). Come fonte di
+            energia primaria si utilizzano per lo più combustibili fossili, come
+            gas naturale, GPL e gasolio, o combustibili organici non fossili,
+            come biogas, biometano, olio vegetale e biomasse. In futuro è
+            probabile che gli impianti di cogenerazione useranno celle a
+            combustibile, che sfruttano la reazione{" "}
+            {"dell’idrogeno con l’ossigeno"}
+            per produrre sia elettricità che calore.
           </p>
         </section>
 
@@ -162,10 +151,11 @@ export default function Home() {
           <p>
             La questione del risparmio energetico vantaggio per le aziende è un
             argomento molto discusso negli ultimi anni. Questo non solo per la
-            necessità di tutelare {"l’ambiente"}, ma anche allo scopo di consentire
-            alle aziende di avere vantaggi fiscali. Si può sicuramente dire che
-            il risparmio energetico rappresenti per le imprese un duplice
-            vantaggio fiscale, ecco di seguito quali sono questi vantaggi.
+            necessità di tutelare {"l’ambiente"}, ma anche allo scopo di
+            consentire alle aziende di avere vantaggi fiscali. Si può
+            sicuramente dire che il risparmio energetico rappresenti per le
+            imprese un duplice vantaggio fiscale, ecco di seguito quali sono
+            questi vantaggi.
           </p>
 
           <p>
@@ -200,8 +190,8 @@ export default function Home() {
             al 92,95%, un dato estremamente positivo. In questo caso pratico
             avrebbe generato un risparmio di detrazione pari a 65mila euro.
             Successivamente, questi 65 mila euro sarebbero stati suddivisi in 10
-            anni, ottenendo così una detrazione pari a 6.500 euro {"all’anno"}. In
-            aggiunta a queste indicazioni è doveroso sottolineare come gli
+            anni, ottenendo così una detrazione pari a 6.500 euro {"all’anno"}.
+            In aggiunta a queste indicazioni è doveroso sottolineare come gli
             imponibili Ires ed Irap avrebbero potuto essere ridotti delle quote
             di ammortamento per {"l’investimento"}, determinando un ulteriore
             risparmio energetico per le imprese. Proprio in relazione agli
@@ -215,9 +205,9 @@ export default function Home() {
           <p>
             La nostra azienda, dopo aver studiato attentamente i consumi ed il
             profilo energetico del cliente, sviluppa un progetto preliminare
-            completo di business plan con {"l’indicazione"} del vantaggio economico
-            perseguibile grazie al risparmio ottenuto ed ai benefici fiscali
-            legati ad ogni singolo intervento.
+            completo di business plan con {"l’indicazione"} del vantaggio
+            economico perseguibile grazie al risparmio ottenuto ed ai benefici
+            fiscali legati ad ogni singolo intervento.
           </p>
         </section>
 
@@ -239,11 +229,12 @@ export default function Home() {
             può essere effettuato in modo “pubblico” presso le stazioni di
             ricarica diffuse sul suolo nazionale (anche in luoghi privati
             destinati ad uso pubblico come i parcheggi dei centri commerciali)
-            oppure in modo del tutto “privato” a casa, mediante {"l’installazione"}
+            oppure in modo del tutto “privato” a casa, mediante{" "}
+            {"l’installazione"}
             di una colonnina o usufruendo delle prese domestiche o industriali.
-            In entrambi i casi, {"l’alimentazione"} avviene “via cavo”. Questi cavi
-            sono dotati di un sistema di protezione denominato PWM (Pulse Width
-            Modulation - con impulso modulato) che garantisce la sicurezza
+            In entrambi i casi, {"l’alimentazione"} avviene “via cavo”. Questi
+            cavi sono dotati di un sistema di protezione denominato PWM (Pulse
+            Width Modulation - con impulso modulato) che garantisce la sicurezza
             durante il funzionamento.
           </p>
 
@@ -267,10 +258,11 @@ export default function Home() {
             anzitempo dove fermarsi per “fare il pieno” di elettricità. Di
             solito, questi dispositivi di ricarica vengono attivati tramite una
             carta o un’applicazione fornita dal gestore scelto per il servizio.
-            La carta (o {"l’applicazione"}) viene utilizzata per avviare la ricarica
-            e terminare la ricarica alla fine. Consente inoltre di considerare
-            le spese, che di solito sono allocate ad un importo fisso
-            dell’operatore e ad una variabile calcolata in base ai kW/h forniti.
+            La carta (o {"l’applicazione"}) viene utilizzata per avviare la
+            ricarica e terminare la ricarica alla fine. Consente inoltre di
+            considerare le spese, che di solito sono allocate ad un importo
+            fisso dell’operatore e ad una variabile calcolata in base ai kW/h
+            forniti.
           </p>
 
           <p>
@@ -279,15 +271,548 @@ export default function Home() {
             dei costruttori di auto ha implementato la possibilità di effettuare
             una ricarica rapida in 30 minuti. Questa modalità permette di le
             batterie all’80%, così da avere abbastanza energia per effettuare
-            tutti gli spostamenti necessari senza innescare {"l’ansia"} da ricarica.
+            tutti gli spostamenti necessari senza innescare {"l’ansia"} da
+            ricarica.
           </p>
 
           <p>
             La nostra azienda, dopo aver studiato attentamente i consumi ed il
             profilo energetico del cliente, sviluppa un progetto preliminare
-            completo di business plan con {"l’indicazione"} del vantaggio economico
-            perseguibile grazie al risparmio ottenuto ed ai benefici fiscali
-            legati ad ogni singolo intervento.
+            completo di business plan con {"l’indicazione"} del vantaggio
+            economico perseguibile grazie al risparmio ottenuto ed ai benefici
+            fiscali legati ad ogni singolo intervento.
+          </p>
+        </section>
+      </div>
+
+      <div className={serviziStyle.cont__servizi}>
+        <h3>
+          <b>
+            INCENTIVI ALLE FAMIGLIE PER INTERVENTI DI EFFICIENTAMENTO ENERGETICO
+          </b>
+        </h3>
+
+        <ul className={serviziStyle.cont__servizi_list}>
+          <li
+            onClick={() => setSectionNew("1")}
+            id={sectionNew == "1" ? "active" : null}
+          >
+            Superbonus 110%
+          </li>
+
+          <li
+            onClick={() => setSectionNew("2")}
+            id={sectionNew == "2" ? "active" : null}
+          >
+            EcoBonus 50%
+          </li>
+        </ul>
+
+        <section style={{ display: sectionNew == "1" ? "flex" : "none" }}>
+          <p>
+            Superbonus al 110 per cento con sconto in fattura o cessione del
+            credito per tutti gli interventi di risparmio energetico realizzati
+            sugli interi edifici, di proprietà condominiale o privata, comprese
+            le villette a schiera, a patto che si riduca di due classi il
+            consumo energetico. Agevolazione ammessa anche per le seconde case,
+            ma esclusa per gli immobili di lusso. Nessuna limitazione, invece,
+            per gli interventi in condominio. In caso di sconto in fattura,
+            questo non potrà superare l'importo dei lavori, per cui il bonus
+            pari al 110 per cento della spesa sarà riconosciuto esclusivamente
+            nel caso in cui si intenda utilizzare la detrazione direttamente o
+            effettuare la cessione del credito. Sconto e cessione anche per chi
+            non paga Irpef ma è titolare di redditi esenti, o soggetti a
+            tassazione separata o imposta sostitutiva. Possibilità di sconto in
+            fattura o cessione del credito anche per il bonus facciate al 90 per
+            cento, e per le detrazioni “ordinarie” per ristrutturazione e
+            risparmio energetico. Opzione solo per i lavori effettuati nel 2020
+            e 2021. Asseverazione sui costi e visto di conformità obbligatori
+            per il riconoscimento del Superbonus.
+          </p>
+
+          <p>
+            Con il varo dei provvedimenti attuativi da parte del Ministero dello
+            sviluppo economico e del direttore dell'Agenzia delle entrate,
+            diventano pienamente operative le norme degli articoli 119 e 121 del
+            decreto Rilancio (dl 34/2020). Possibile quindi avviare i lavori.
+            Condizione indispensabile per ottenere il Superbonus è la riduzione
+            di due classi di consumo energetico dell'edificio, o del singolo
+            appartamento in caso di immobili vincolati sui quali non sono
+            ammessi interventi sull'esterno del fabbricato.
+          </p>
+
+          <p>
+            <b>1.1 La lista dei Lavori Agevolati</b>
+            <br /> <br />
+            Il Superbonus è riconosciuto esclusivamente per gli immobili dotati
+            di impianto di riscaldamento a destinazione residenziale, ovvero con
+            una superficie complessiva delle unità immobiliari destinate a
+            residenza ricomprese nell’edificio superiore al 50 per cento, come
+            specificatamente indicato dalla circolare 24 delle Entrate.
+            L'installazione di un nuovo impianto in un edificio che ne è privo
+            non consente di accedere all'agevolazione. La detrazione del 110 per
+            cento va ripartita in cinque quote annuali tra tutti i soggetti che
+            hanno partecipato alla spesa in riferimento alla quota
+            effettivamente versata. Obbligatorio per il pagamento il bonifico
+            dedicato.
+          </p>
+
+          <p>
+            La lista degli interventi che danno diritto alla detrazione con
+            aliquota al 110 per cento è suddivisa in due categorie: interventi
+            “trainanti” (comma 1 art. 119) e interventi “trainati” (comma 2).
+            L'esecuzione di uno degli interventi trainanti dà diritto ad
+            ottenere il Superbonus anche per gli interventi trainati. La
+            riduzione di due classi energetiche dell'edificio può essere
+            ottenuta anche dalla somma di interventi delle due categorie. Quello
+            che conta è il risultato finale.
+          </p>
+
+          <p>Gli interventi trainanti sono i seguenti:</p>
+
+          <p>
+            <b>
+              interventi di isolamento termico delle superfici opache verticali
+              e orizzontali e inclinate che interessano l’involucro
+              dell’edificio con un’incidenza superiore al 25 per cento della
+              superficie disperdente lorda dell’edificio medesimo, o dell'unità
+              immobiliare situata all'interno di edifici plurifamiliari che sia
+              funzionalmente indipendente e disponga di uno o più accessi
+              autonomi dall'esterno;
+              <br />
+              <br /> interventi sulle parti comuni degli edifici per la
+              sostituzione degli impianti di climatizzazione invernale esistenti
+              con impianti centralizzati per il riscaldamento, il raffrescamento
+              o la fornitura di acqua calda sanitaria a condensazione, con
+              efficienza almeno pari alla classe A, inclusi gli impianti ibridi
+              o geotermici, anche abbinati all’installazione di impianti
+              fotovoltaici, e per l'installazione di collettori solari. Per i
+              comuni montani non interessati a procedure d'infrazione
+              comunitarie in riferimento alla qualità dell'aria la detrazione è
+              ammessa anche per l'allaccio a sistemi di teleriscaldamento
+              efficiente. Il massimale di spesa copre anche i lavori per la
+              sostituzione della canna fumaria collettiva esistente, mediante
+              sistemi fumari multipli o collettivi nuovi, compatibili con
+              apparecchi a condensazione, con marcatura CE, nel rispetto dei
+              requisiti minimi di prestazione;
+              <br />
+              <br /> interventi sugli edifici unifamiliari, compresi quelli
+              situati all'interno di edifici plurifamiliari che siano
+              funzionalmente indipendenti e dispongano di uno o più accessi
+              autonomi dall'esterno, per la sostituzione degli impianti di
+              climatizzazione invernale esistenti con impianti per il
+              riscaldamento, il raffrescamento o la fornitura di acqua calda
+              sanitaria, gli impianti ibridi o geotermici, anche abbinati
+              all’installazione di impianti fotovoltaici ovvero con impianti di
+              microcogenerazione, per una spesa non superiore a 30.000 euro,
+              compresa quella per lo smaltimento e la bonifica dell’impianto
+              sostituito.
+              <br /> <br /> Nei comuni con aree non metanizzate e nei comuni
+              montani, è ammessa anche la sostituzione dell'impianto
+              preesistente con altro con caldaia a biomassa con classe di
+              qualità non inferiore a 5 stelle. In entrambi i casi si deve
+              trattare di comuni non interessati a procedure d'infrazione
+              comunitarie in riferimento alla qualità dell'aria.
+            </b>
+          </p>
+
+          <p>
+            Sono ammessi al Superbonus anche gli interventi di demolizione e
+            ricostruzione come indicati nell'articolo 3, comma 1, lettera d),
+            del Testo unico delle disposizioni legislative e regolamentari in
+            materia edilizia D.P.R. 380/2001.
+          </p>
+
+          <p>
+            La nostra Azienda offre agli utenti residenziali, privati e
+            condomini, la consulenza per verificare la fattibilità degli
+            interventi e la possibilità di ottenere i benefici fiscali legati
+            agli interventi Provvede poi a sviluppare la documentazione
+            richiesta ed a progettare e realizzare gli interventi agevolati.
+          </p>
+        </section>
+
+        <section style={{ display: sectionNew == "2" ? "flex" : "none" }}>
+          <p>
+            Sulla Gazzetta Ufficiale n.322 del 30.12.2020 è stata pubblicata la
+            Legge di Bilancio 2021 (L. 30.12.2020 n.178) che proroga al 31
+            dicembre 2021 le detrazioni fiscali per l’efficienza energetica
+            degli edifici (Ecobonus) e le detrazioni fiscali per le
+            ristrutturazioni (Bonus Casa), in relazione alle spese sostenute dal
+            1° gennaio 2021 al 31 dicembre 2023 In analogia a quanto già
+            previsto in materia di detrazioni fiscali per la riqualificazione
+            energetica degli edifici, occorre trasmettere per via telematica
+            all’ENEA le informazioni sugli interventi terminati dal 2018 in poi,
+            che accedono alle detrazioni fiscali del 50% per le ristrutturazioni
+            edilizie (Bonus Casa) che comportano risparmio energetico e/o
+            utilizzo delle fonti rinnovabili.
+          </p>
+
+          <p>
+            La seguente tabella sintetizza gli interventi di risparmio
+            energetico e utilizzo di fonti di energia rinnovabile che
+            usufruiscono delle detrazioni fiscali del 50% previste per le
+            ristrutturazioni edilizie - ex art. 16 bis del DPR 917/86 soggetti
+            all’obbligo di invio all’ENEA:
+          </p>
+
+          <p>
+            <b>Strutture Edilizie: </b>
+            <br /> <br />
+            riduzione della trasmittanza delle pareti verticali che delimitano
+            gli ambienti riscaldati dall’esterno, dai vani freddi e dal terreno;
+            <br />
+            <br />
+            riduzione delle trasmittanze delle strutture opache orizzontali e
+            inclinate (coperture) che delimitano gli ambienti riscaldati
+            dall’esterno e dai vani freddi;
+            <br />
+            <br />
+            riduzione della trasmittanza termica dei pavimenti che delimitano
+            gli ambienti riscaldati dall’esterno, dai vani freddi e dal terreno;
+          </p>
+
+          <p>
+            <b>Infissi:</b>
+            <br />
+            <br />
+            riduzione della trasmittanza dei serramenti comprensivi di infissi
+            che delimitano gli ambienti riscaldati dall’esterno e dai vani
+            freddi
+          </p>
+
+          <p>
+            <b>Impianti Tecnologici</b>
+            <br />
+            <br />
+            <br />
+            installazione di collettori solari (solare termico) per la
+            produzione di acqua calda sanitaria e/o il riscaldamento degli
+            ambienti;
+            <br />
+            sostituzione di generatori di calore con caldaie a condensazione per
+            il riscaldamento degli ambienti (con o senza produzione di acqua
+            calda sanitaria) o per la sola produzione di acqua calda per una
+            pluralità di utenze ed eventuale adeguamento dell’impianto;
+            <br />
+            sostituzione di generatori con generatori di calore ad aria a
+            condensazione ed eventuale adeguamentodell’impianto;
+            <br />
+            pompe di calore per climatizzazione degli ambienti ed eventuale
+            adeguamento dell’impianto;
+            <br />
+            sistemi ibridi (caldaia a condensazione e pompa di calore) ed
+            eventuale adeguamento dell’impianto;
+            <br />
+            microcogeneratori (Pe50kWe);
+            <br />
+            scaldacqua a pompa di calore;
+            <br />
+            generatori di calore a biomassa;
+            <br />
+            installazione di sistemi di contabilizzazione del calore negli
+            impianti centralizzati per una pluralità di utenze;
+            <br />
+            installazione di impianti fotovoltaici e sistemi di accumulo
+            (limitatamente ai sistemi di accumulo i dati vanno trasmessi per gli
+            interventi con data di fine lavori a partire dal 01/01/2019);
+            <br />
+            teleriscaldamento;
+            <br />
+            installazione di sistemi di termoregolazione e building automation.
+          </p>
+
+          <p>
+            <b>Elettrodomestici</b> - solo se collegati ad un intervento di
+            recupero del patrimonio edilizio iniziato a decorrere dal: 1°
+            gennaio 2018 per le spese sostenute nel 2019 1° gennaio 2019 per le
+            spese sostenute nel 2020.
+            <br />
+            <br />
+            forni <br />
+            frigoriferi <br />
+            lavastoviglie <br />
+            piani cottura elettrici <br />
+            lavasciuga
+            <br />
+            lavatrici <br />
+            asciugatrici
+          </p>
+
+          <p>
+            La nostra Azienda offre agli utenti residenziali, privati e
+            condomini, la consulenza per verificare la fattibilità degli
+            interventi e la possibilità di ottenere i benefici fiscali legati
+            agli interventi Provvede poi a sviluppare la documentazione
+            richiesta ed a progettare e realizzare gli interventi agevolati.
+          </p>
+        </section>
+      </div>
+
+      <div className={serviziStyle.cont__servizi}>
+        <h3>
+          <b>
+            INCENTIVI ALLE AZIENDE PER INTERVENTI DI EFFICIENTAMENTO ENERGETICO
+          </b>
+        </h3>
+
+        <ul className={serviziStyle.cont__servizi_list} id="aziende">
+          <li
+            onClick={() => setSectionThird("1")}
+            id={sectionThird == "1" ? "active" : null}
+          >
+            CREDITO D’IMPOSTA PER IL SUD
+          </li>
+
+          <li
+            onClick={() => setSectionThird("2")}
+            id={sectionThird == "2" ? "active" : null}
+          >
+            DECRETO LEGGE 25 MARZO 2022 “PARCO AGRISOLARE PER LE AZIENDE
+            AGRICOLE
+          </li>
+
+          <li
+            onClick={() => setSectionThird("3")}
+            id={sectionThird == "3" ? "active" : null}
+          >
+            DECRETO LEGGE 17 DEL 2/22 AZZERAMENTO ONERI DI SISTEMA E CREDITO
+            D’IMPOSTA
+          </li>
+        </ul>
+
+        <section style={{ display: sectionThird == "1" ? "flex" : "none" }}>
+          <p>
+            Il titolo I del D.L. 17/2022 denominato “Misure urgenti in materia
+            di energia elettrica, gas naturale e fonti rinnovabili”, introduce,
+            all’art. 14, un contributo sotto forma di credito d’imposta per
+            l’efficienza energetica nelle regioni del Sud Italia, al fine di
+            contenere l’aumento dei costi dell’energia elettrica e del gas
+            naturale, ed al tempo stesso promuovere lo sviluppo delle energie
+            rinnovabili e il rilancio delle politiche industriali
+            ecosostenibili.Il bonus per l'efficientamento energetico sarà valido
+            fino al 30 novembre 2023 e coprirà gli investimenti effettuati dalle
+            imprese per le loro strutture produttive, se ubicate nelle regioni
+            Abruzzo, Basilicata, Calabria, Campania, Molise, Puglia, Sardegna e
+            Sicilia.
+          </p>
+
+          <p>
+            Per ciascuno degli anni 2022 e 2023 sono stati stanziati 145 milioni
+            di euro, sotto forma di credito d’imposta, nella misura massima
+            consentita dal regolamento UE n. 651/2014 della Commissione. Il
+            credito sarà utilizzabile esclusivamente in compensazione e non
+            concorrerà alla formazione del reddito dell'impresa né della base
+            imponibile dell'Irap (Imposta regionale sulle attività produttive).
+            Lo sgravio è cumulabile con altre agevolazioni che abbiano ad
+            oggetto i medesimi costi, a condizione che tale cumulo non porti al
+            superamento del costo sostenuto. Saranno ammessi gli interventi
+            finalizzati a conseguire un risparmio energetico e le spese per
+            avviare l'autoproduzione di energia da fonti rinnovabili.
+          </p>
+
+          <p>
+            Entro sessanta giorni dalla data di entrata in vigore del D.L. n.
+            17/2022 (auspicabilmente entro il 2 maggio 2022), il Ministro per il
+            Sud e la coesione territoriale, di concerto il Ministro della
+            Transizione ecologica, il Ministro dello Sviluppo economico e il
+            Ministro dell’Economia e delle finanze, emanerà un decreto attuativo
+            con il quale verranno messi a punto criteri, modalità di attuazione,
+            costi ammissibili all’agevolazione, documentazione richiesta,
+            procedure di concessione e condizioni di revoca del credito
+            d’imposta per l’efficienza energetica nelle regioni del Sud Italia.
+          </p>
+
+          <p>
+            La nostra Azienda offre alle aziende, la consulenza per verificare
+            la fattibilità degli interventi e la possibilità di ottenere i
+            benefici fiscali legati agli interventi Provvede poi a sviluppare la
+            documentazione richiesta ed a progettare e realizzare gli interventi
+            agevolati.
+          </p>
+        </section>
+
+        <section style={{ display: sectionThird == "2" ? "flex" : "none" }}>
+          <p>
+            La presente scheda illustrativa riporta gli elementi essenziali del
+            Decreto 25 marzo 2022, emanato dal Ministro delle politiche agricole
+            alimentari e forestali, per dare avvio alla misura PNRR “Parco
+            Agrisolare”. Le informazioni sotto riportate potranno essere
+            integrate a seguito del confronto con la Commissione europea in
+            materia di aiuti di stato e saranno dettagliate dal Bando che sarà
+            emanato nei prossimi mesi.
+          </p>
+
+          <p>
+            Sostegno agli investimenti nelle strutture produttive del settore
+            agricolo, zootecnico e agroindustriale, al fine di installare
+            pannelli solari e sistemi di gestione intelligente dei flussi e
+            degli accumulatori, rimuovere e smaltire i tetti esistenti e
+            costruire nuovi tetti isolati, creare sistemi automatizzati di
+            ventilazione e/o di raffreddamento.
+          </p>
+
+          <p>
+            <b>Cosa Finanzia?</b>
+          </p>
+
+          <p>
+            1. Intervento principale e obbligatorio: acquisto e posa in opera di
+            pannelli fotovoltaici, sui tetti di fabbricati suddetti, con potenza
+            di picco non inferiore a 6 kWp e non superiore a 500 kWp. · Per le
+            aziende agricole di produzione primaria, gli impianti fotovoltaici
+            sono ammissibili agli aiuti unicamente se l’obiettivo è quello di
+            soddisfare il fabbisogno energetico dell’azienda e se la loro
+            capacità produttiva non supera il consumo medio annuo di energia
+            elettrica dell’azienda agricola, compreso quello familiare. La
+            vendita di energia elettrica è consentita nella rete purché sia
+            rispettato il limite di autoconsumo annuale. 2. Interventi
+            facoltativi di riqualificazione ai fini del miglioramento
+            dell’efficienza energetica delle strutture: · rimozione e
+            smaltimento dell’amianto (o, se del caso, dell’eternit) dai tetti,
+            in conformità alla normativa nazionale di settore vigente: tale
+            procedura deve essere svolta unicamente da ditte specializzate,
+            iscritte nell’apposito registro; · realizzazione dell’isolamento
+            termico dei tetti: la relazione tecnica del professionista abilitato
+            dovrà descrivere e giustificare la scelta del grado di coibentazione
+            previsto in ragione delle specifiche destinazioni produttive del
+            fabbricato, anche al fine di migliorare il benessere animale; ·
+            realizzazione di un sistema di aerazione connesso alla sostituzione
+            del tetto (intercapedine d’aria): la relazione del professionista
+            dovrà dare conto delle modalità di aereazione previste in ragione
+            della destinazione produttiva del fabbricato; a ogni modo, il
+            sistema di areazione dovrà essere
+          </p>
+
+          <p>
+            La nostra Azienda offre alle aziende, la consulenza per verificare
+            la fattibilità degli interventi e la possibilità di ottenere i
+            benefici fiscali legati agli interventi Provvede poi a sviluppare la
+            documentazione richiesta ed a progettare e realizzare gli interventi
+            agevolati.
+          </p>
+        </section>
+
+        <section style={{ display: sectionThird == "3" ? "flex" : "none" }}>
+          <p>
+            <b>
+              Azzeramento degli oneri di sistema per il secondo trimestre 2022
+            </b>
+          </p>
+
+          <p>
+            1. Per ridurre gli effetti degli aumenti dei prezzi nel settore
+            elettrico, l'Autorita' di regolazione per energia, reti e ambiente
+            (ARERA) provvede ad annullare, per il secondo trimestre 2022, le
+            aliquote relative agli oneri generali di sistema applicate alle
+            utenze domestiche e alle utenze non domestiche in bassa tensione,
+            per altri usi, con potenza disponibile fino a 16,5 kW. 2. Per
+            ridurre gli effetti degli aumenti dei prezzi nel settore elettrico,
+            l'ARERA provvede ad annullare, per il secondo trimestre 2022, le
+            aliquote relative agli oneri generali di sistema applicate alle
+            utenze con potenza disponibile pari o superiore a 16,5 kW, anche
+            connesse in media e alta/altissima tensione o per usi di
+            illuminazione pubblica o di ricarica di veicoli elettrici in luoghi
+            accessibili al pubblico. 3. Agli oneri derivanti dalla presente
+            disposizione, pari a complessivi 3.000 milioni di euro per l'anno
+            2022, da trasferire alla Cassa per i servizi energetici e ambientali
+            (CSEA), entro il 31 maggio 2022, si provvede ai sensi dell'articolo
+            42.
+          </p>
+
+          <p>
+            <b>Riduzione dell'IVA e degli oneri generali nel settore del gas</b>
+          </p>
+
+          <p>
+            1. In deroga a quanto previsto dal decreto del Presidente della
+            Repubblica 26 ottobre 1972, n. 633, le somministrazioni di gas
+            metano usato per combustione per usi civili e industriali di cui
+            all'articolo 26, comma 1, del testo unico delle disposizioni
+            legislative concernenti le imposte sulla produzione e sui consumi
+            erelative sanzioni penali e amministrative, di cui al decreto
+            legislativo 26 ottobre 1995, n. 504, contabilizzate nelle fatture
+            emesse per i consumi stimati o effettivi dei mesi di aprile, maggio
+            e giugno 2022, sono assoggettate all'aliquota IVA del 5 per cento.
+            Qualora le somministrazioni di cui al primo periodo siano
+            contabilizzate sulla base di consumi stimati, l'aliquota IVA del
+            5per cento si applica anche alla differenza derivante dagli importi
+            ricalcolati sulla base dei consumi effettivi riferibili, anche
+            percentualmente, ai mesi di aprile, maggio e giugno 2022. 2. Agli
+            oneri derivanti dal comma 1, valutati in 591,83 milioni di euro per
+            l'anno 2022, si provvede ai sensi dell'articolo 42. 3. Al fine di
+            contenere per il secondo trimestre dell'anno 2022 gli effetti degli
+            aumenti dei prezzi nel settore del gas naturale, l'ARERA provvede a
+            ridurre, per il medesimo trimestre, le aliquote relative agli oneri
+            generali di sistema per il settore del gas fino a concorrenza
+            dell'importo di 250 milioni di euro. Tale importo e' trasferito alla
+            CSEA entro il 31 maggio 2022. 4. Agli oneri derivanti dal comma 3,
+            pari a 250 milioni di euro per l'anno 2022, si provvede ai sensi
+            dell'articolo 42.
+          </p>
+
+          <p>
+            <b>
+              Contributo straordinario, sotto forma di credito d'imposta, a
+              favore delle imprese energivore
+            </b>
+          </p>
+
+          <p>
+            1. Alle imprese a forte consumo di energia elettrica di cui al
+            decreto del Ministro dello sviluppo economico 21 dicembre 2017,
+            della cui adozione e' stata data comunicazione nella Gazzetta
+            Ufficiale della Repubblica italiana n. 300 del 27 dicembre 2017, i
+            cui costi per kWh della componente energia elettrica, calcolati
+            sulla base della media del primo trimestre 2022 ed al netto delle
+            imposte e degli eventuali sussidi, hanno subito un incremento del
+            costo per KWh superiore al 30 per cento relativo al medesimo periodo
+            dell'anno 2019, anche tenuto conto di eventuali contratti di
+            fornitura di durata stipulati dall'impresa, e' riconosciuto un
+            contributo straordinario a parziale compensazione dei maggiori oneri
+            sostenuti, sotto forma di credito di imposta, pari al 20 per cento
+            delle spese sostenute per la componente energetica acquistata ed
+            effettivamente utilizzata nel secondo trimestre 2022. 2. Il credito
+            di imposta di cui al comma 1 e' riconosciuto anche in relazione alla
+            spesa per l'energia elettrica prodotta dalle imprese di cui al
+            medesimo comma 1 e dalle stesse autoconsumata nel secondo trimestre
+            2022. In tal caso l'incremento del costo per kWh di energia
+            elettrica prodotta e autoconsumata e' calcolato con riferimento alla
+            variazione del prezzo unitario dei combustibili acquistati ed
+            utilizzati dall'impresa per la produzione della medesima energia
+            elettrica e il credito di imposta e' determinato con riguardo al
+            prezzo convenzionale dell'energia elettrica pari alla media,
+            relativa al secondo trimestre 2022, del prezzo unico nazionale
+            dell'energiaelettrica. 3. Il credito d'imposta di cui al comma 1 e'
+            utilizzabile esclusivamente in compensazione ai sensi dell'articolo
+            17 del decreto legislativo 9 luglio 1997, n. 241. Non si applicano i
+            limiti di cui all'articolo 1, comma 53, della legge 24 dicembre
+            2007, n. 244, e di cui all'articolo 34 della legge 23 dicembre 2000,
+            n. 388. Il credito d'imposta non concorre alla formazione del
+            reddito d'impresa ne' della base imponibile dell'imposta regionale
+            sulle attivita' produttive e non rileva ai fini del rapporto di cui
+            agli articoli 61 e 109, comma 5, del testo unico delle imposte sui
+            redditi approvato con decreto del Presidente della Repubblica 22
+            dicembre 1986, n. 917. Il credito d'imposta e' cumulabile con altre
+            agevolazioni che abbiano ad oggetto i medesimi costi, a condizione
+            che tale cumulo, tenuto conto anche della non concorrenza alla
+            formazione del reddito e della base imponibile dell'imposta
+            regionale sulle attivita' produttive, non porti al superamento del
+            costo sostenuto. 4. Agli oneri derivanti dall'utilizzo della misura
+            agevolativa di cui al presente articolo, valutati in 700 milioni di
+            euro per l'anno 2022, si provvede ai sensi dell'articolo 42. 5. Il
+            Ministero dell'economia e delle finanze effettua il monitoraggio
+            delle fruizioni del credito d'imposta di cui al presente articolo,
+            ai fini di quanto previsto dall'articolo 17, comma 13, della legge
+            31 dicembre 2009, n. 196
+          </p>
+
+          <p>
+            La nostra Azienda offre alle aziende, la consulenza per verificare
+            la fattibilità degli interventi e la possibilità di ottenere i
+            benefici fiscali legati agli interventi Provvede poi a sviluppare la
+            documentazione richiesta ed a progettare e realizzare gli interventi
+            agevolati.
           </p>
         </section>
       </div>

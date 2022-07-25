@@ -16,6 +16,9 @@
     flex-wrap: wrap;
   }
 }
+.cont__servizi_list[id=aziende] > li {
+  width: fit-content !important;
+}
 .cont__servizi_list > li {
   width: 25%;
   padding: 20px;
@@ -73,6 +76,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  width: 100%;
+}
+.cont__servizi > section > p > b {
+  color: #6200ff;
 }
 .cont__servizi > section > p:last-of-type {
   text-decoration: underline;

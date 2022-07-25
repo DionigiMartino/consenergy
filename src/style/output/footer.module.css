@@ -5,6 +5,61 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+}
+.cont__footer_chat {
+  width: fit-content;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.cont__footer_chat_button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  padding: 12.5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px #1d1d1d;
+  cursor: pointer;
+  transition: transform 0.8s;
+  margin-left: auto;
+  border: none;
+}
+.cont__footer_chat_button:hover {
+  transform: scale(0.95);
+}
+.cont__footer_chat_button > img {
+  width: 100%;
+  height: 100%;
+}
+.cont__footer_chat_list {
+  width: 200px;
+  height: fit-content;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+.cont__footer_chat_list > li {
+  width: 100%;
+  padding: 15px 15px;
+  background-color: #fff;
+  border-radius: 7.5px;
+  box-shadow: 0px 0px 3px #1d1d1d;
+  cursor: pointer;
+  color: #363636;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cont__footer_chat_list > li > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 .cont__footer_under {
   width: 100%;

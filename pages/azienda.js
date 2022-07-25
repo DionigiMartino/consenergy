@@ -3,7 +3,9 @@ import chiSiamo from "../src/style/output/chisiamo.module.css";
 import axpoLogo from '../public/media/img/axpo.svg'
 import dufercoLogo from "../public/media/img/duferco.jpeg";
 import bukheLogo from "../public/media/img/bukhe.svg";
-import microBeesLogo from "../public/media/img/microbees.svg";
+import moovyLogo from "../public/media/img/moovy.jpg";
+import aegLogo from "../public/media/img/logoaeg.svg";
+
 
 
 function Azienda() {
@@ -76,19 +78,18 @@ function Azienda() {
 
       <ul>
         <li>
+          <img src={dufercoLogo} alt="Duferco" />
+        </li>
+        <li>
           <img src={axpoLogo} alt="Axpo" />
         </li>
 
         <li>
-          <img src={dufercoLogo} alt="Duferco" />
+          <img src={aegLogo} alt="bukhe" />
         </li>
 
         <li>
-          <img src={bukheLogo} alt="bukhe" />
-        </li>
-
-        <li>
-          <img src={microBeesLogo} alt="microBees" />
+          <img src={moovyLogo} alt="microBees" />
         </li>
       </ul>
     </div>

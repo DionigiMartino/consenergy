@@ -17,6 +17,10 @@
       flex-wrap: wrap;
     }
 
+    &[id="aziende"] > li {
+      width: fit-content !important;
+    }
+
     & > li {
       width: 25%;
       padding: 20px;
@@ -81,6 +85,11 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
+      width: 100%;
+
+      & > b {
+        color: $secondary_color;
+      }
 
       &:last-of-type {
         text-decoration: underline;

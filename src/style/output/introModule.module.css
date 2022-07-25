@@ -164,6 +164,8 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 20px;
+  height: fit-content;
+  min-height: 100px;
   color: #fff;
   font-size: 18px;
   font-weight: 400;

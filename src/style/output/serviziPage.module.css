@@ -14,6 +14,9 @@
   display: none;
   flex-direction: column;
 }
+.cont__serviziPage > section > article[id=consulenza] {
+  display: flex;
+}
 .cont__serviziPage > section > article > p {
   line-height: 35px;
   letter-spacing: 0.5px;
@@ -29,6 +32,41 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+@media (max-width: 780px) {
+  .cont__serviziPage_list[id=consulenza], .cont__serviziPage_list[id=consulenza2], .cont__serviziPage_list[id=consulenza3] {
+    flex-direction: column;
+  }
+  .cont__serviziPage_list[id=consulenza] > li, .cont__serviziPage_list[id=consulenza2] > li, .cont__serviziPage_list[id=consulenza3] > li {
+    width: 100% !important;
+  }
+}
+.cont__serviziPage_list[id=consulenza] > li {
+  color: #6200ff;
+  border-radius: 15px;
+  border: 2px solid #6200ff;
+  width: 45%;
+}
+.cont__serviziPage_list[id=consulenza2] > li {
+  color: #6200ff;
+  border-radius: 15px;
+  border: 2px solid #6200ff;
+  width: 28.5%;
+  font-size: 16px;
+  padding: 15px;
+}
+.cont__serviziPage_list[id=consulenza3] {
+  margin-top: 50px;
+}
+.cont__serviziPage_list[id=consulenza3] > li {
+  color: #6200ff;
+  border-radius: 15px;
+  border: 2px solid #6200ff;
+  width: 92.5%;
+  height: fit-content;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0 auto;
 }
 @media (max-width: 780px) {
   .cont__serviziPage_list {

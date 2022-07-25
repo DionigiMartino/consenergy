@@ -1,14 +1,46 @@
-import React, {useContext} from "react";
+import React, { useContext, useState } from "react";
 import footerStyle from "../style/output/footer.module.css";
 import logo from "../../public/media/img/logoconsenergy.jpeg";
 import Link from "next/link";
 import AppContext from "../../context/context";
+import chat from "../../public/media/img/chat.svg";
+import liveChat from "../../public/media/img/livechat.svg";
+import wa from "../../public/media/img/wa.svg";
+import fb from "../../public/media/img/facebook.svg";
 
 function Footer() {
-  const {setService} = useContext(AppContext)
+  const { setService } = useContext(AppContext);
+  const [chatOpen, setChat] = useState(false);
 
   return (
     <footer className={footerStyle.cont__footer}>
+      <div className={footerStyle.cont__footer_chat}>
+        <ul
+          className={footerStyle.cont__footer_chat_list}
+          style={{ display: chatOpen ? "flex" : "none" }}
+        >
+          <li>
+            <img src={liveChat} alt="Live chat" />
+            Live chat
+          </li>
+          <li>
+            <img src={wa} alt="Live chat" />
+            What's App
+          </li>
+          <li>
+            <img src={fb} alt="Live chat" />
+            Facebook Chat
+          </li>
+        </ul>
+
+        <button
+          className={footerStyle.cont__footer_chat_button}
+          onClick={() => setChat(chatOpen ? false : true)}
+        >
+          <img src={chat} alt="Live Chat" />
+        </button>
+      </div>
+
       <div className={footerStyle.cont__footer_inside}>
         <div className={footerStyle.cont__footer_inside_info}>
           <div className={footerStyle.cont__footer_inside_info_logo}>
@@ -142,13 +174,19 @@ function Footer() {
             <li>Agevolazioni</li>
 
             <li>
-              <Link href="media/docs/ACCISEAGEVOLATE.pdf">Accise Agevolate</Link>
+              <Link href="media/docs/ACCISEAGEVOLATE.pdf">
+                Accise Agevolate
+              </Link>
             </li>
             <li>
-              <Link href="media/docs/ILMERCATODELGAS.pptx">Mercato del Gas</Link>
+              <Link href="media/docs/ILMERCATODELGAS.pptx">
+                Mercato del Gas
+              </Link>
             </li>
             <li>
-              <Link href="media/docs/ILMERCATOENERGETICO.pptx">Mercato Energetico</Link>
+              <Link href="media/docs/ILMERCATOENERGETICO.pptx">
+                Mercato Energetico
+              </Link>
             </li>
           </ul>
 
@@ -164,11 +202,14 @@ function Footer() {
             </li>
           </ul>
         </div>
-          </div>
-          
-          <div className={footerStyle.cont__footer_under}>
-              <p>Copyright © 2022 - Consenergy - P.IVA 029292019 - Made by <a href="www.previrtae.com">Previrtae</a></p>
-          </div>
+      </div>
+
+      <div className={footerStyle.cont__footer_under}>
+        <p>
+          Copyright © 2022 - Consenergy - P.IVA 029292019 - Made by{" "}
+          <a href="www.previrtae.com">Previrtae</a>
+        </p>
+      </div>
     </footer>
   );
 }

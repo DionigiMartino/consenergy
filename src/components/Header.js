@@ -21,15 +21,7 @@ function Header() {
         </li>
 
         <li onClick={() => openMenu(false)}>
-          <Link href="media/docs/ACCISEAGEVOLATE.pdf">Accise Agevolate</Link>
-        </li>
-        <li onClick={() => openMenu(false)}>
-          <Link href="media/docs/ILMERCATODELGAS.pptx">Mercato del Gas</Link>
-        </li>
-        <li onClick={() => openMenu(false)}>
-          <Link href="media/docs/ILMERCATOENERGETICO.pptx">
-            Mercato Energetico
-          </Link>
+          <Link href="/agevolazioni-fiscali">Agevolazioni Fiscali</Link>
         </li>
 
         <li onClick={() => openMenu(false)}>
@@ -81,25 +73,7 @@ function Header() {
           </li>
 
           <li id="dropdown">
-            <Link href="/">Agevolazioni Fiscali</Link>
-
-            <ul>
-              <li>
-                <Link href="media/docs/ACCISEAGEVOLATE.pdf">
-                  Accise Agevolate
-                </Link>
-              </li>
-              <li>
-                <Link href="media/docs/ILMERCATODELGAS.pptx">
-                  Mercato del Gas
-                </Link>
-              </li>
-              <li>
-                <Link href="media/docs/ILMERCATOENERGETICO.pptx">
-                  Mercato Energetico
-                </Link>
-              </li>
-            </ul>
+            <Link href="/agevolazioni-fiscali">Agevolazioni Fiscali</Link>
           </li>
 
           <li>
