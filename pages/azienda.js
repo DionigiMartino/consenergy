@@ -18,9 +18,9 @@ function Azienda() {
       <h3>La nostra Azienda</h3>
 
       <p>
-        La nostra Società, vanta un’esperienza consolidata nel mercato
-        dell’energia, specialistica nel settore delle energie rinnovabili e
-        dell’efficienza energetica, riconosciuta come Energy Service
+        La nostra Società, vanta un&apos;esperienza consolidata nel mercato
+        dell&apos;energia, specialistica nel settore delle energie rinnovabili e
+        dell&apos;efficienza energetica, riconosciuta come Energy Service
         Company-Esco. Offre i propri servizi professionali per lo sviluppo ed il
         sostegno economico dei piani di sviluppo aziendale dei propri Clienti,
         costituiti principalmente da: <br />
@@ -34,12 +34,12 @@ function Azienda() {
 
       <p>
         Grazie alle competenze multidisciplinari dei suoi professionisti,
-        l’accreditamento presso gli enti e le istituzioni competenti, la Società
+        l&apos;accreditamento presso gli enti e le istituzioni competenti, la Società
         si propone di diventare uno «sportello unico» di fiducia per i propri
-        Clienti, su tutti gli aspetti legati alla gestione dell’energia, ai
+        Clienti, su tutti gli aspetti legati alla gestione dell&apos;energia, ai
         meccanismi di incentivazione e alla costruzione ed esercizio di sistemi
         energetici, anche complessi. Naturalmente, come abbiamo avuto modo di
-        spiegare al Vostro Responsabile, l’intervento della nostra Società, non
+        spiegare al Vostro Responsabile, l&apos;intervento della nostra Società, non
         si esaurirà in queste prime fasi ma continuerà nel tempo affiancando la
         Vostra spettabile Direzione in tutte quelle scelte, che grazie al
         continuo sviluppo delle tecnologie, vi consentiranno di ridurre sempre
@@ -47,8 +47,8 @@ function Azienda() {
       </p>
 
       <p>
-        L’azione svolta dalla nostra Società, grazie alle conoscenze specifiche
-        acquisite nel settore specifico, assicura all’utente finale una continua
+        L&apos;azione svolta dalla nostra Società, grazie alle conoscenze specifiche
+        acquisite nel settore specifico, assicura all&apos;utente finale una continua
         ottimizzazione dei costi di energia elettrica e termica. La Società,
         inoltre, affianca il Cliente:
         <br />
@@ -59,8 +59,8 @@ function Azienda() {
         </b>{" "}
         <br />
         <b>
-          nell’elaborazione di tutti i documenti necessari per l’ottenimento
-          delle Autorizzazioni previste per l’esecuzione e la gestione degli
+          nell&apos;elaborazione di tutti i documenti necessari per l&apos;ottenimento
+          delle Autorizzazioni previste per l&apos;esecuzione e la gestione degli
           impianti proposti.
         </b>
       </p>

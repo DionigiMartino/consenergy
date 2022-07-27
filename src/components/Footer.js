@@ -26,7 +26,7 @@ function Footer() {
           <Link href="https://api.whatsapp.com/send?phone=3920930367">
             <li>
               <img src={wa} alt="Live chat" />
-              What's App
+              What&apos;s App
             </li>
           </Link>
           <li>

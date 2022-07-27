@@ -58,40 +58,40 @@ function Servizi() {
       <section>
         <article id={service == "1" ? "active" : null}>
           <p>
-            Un impianto solare fotovoltaico permette di trasformare{" "}
-            {"l’energia"}
+            Un impianto solare fotovoltaico permette di trasformare 
+            l&apos;energia
             solare incidente sulla superficie terrestre in energia elettrica, la
-            seguente figura indica lo schema funzionale del{"l’impianto"}:
+            seguente figura indica lo schema funzionale dell&apos;impianto:
           </p>
 
           <p>
             I moduli fotovoltaici, esposti al sole, producono corrente elettrica
-            in forma continua. L’inverter trasforma la corrente da continua ad
+            in forma continua. L&apos;inverter trasforma la corrente da continua ad
             alternata, che è quella comunemente utilizzata dalle utenze. La
-            corrente erogata dall’inverter viene assorbita {"dall’utenza"}
-            attraverso {"l’impianto"} esistente. Nel caso in cui {"l’impianto"}{" "}
+            corrente erogata dall&apos;inverter viene assorbita dall&apos;utenza
+            attraverso l&apos;impianto esistente. Nel caso in cui l&apos;impianto 
             solare produca più energia di quella che serve in quel momento, il
             surplus viene immesso nella rete elettrica del Gestore di zona e
             viene misurato dal contatore, installato nel punto di consegna,
             dedicato proprio a conteggiare la corrente prodotta dal
-            {"l’impianto"} solare e non usata dall’utente. <br />
-            Quando {"l’impianto"} solare non produce (di notte) o produce poco
-            (brutto tempo) o la corrente richiesta {"dall’utenza"} è maggiore di
+            l&apos;impianto solare e non usata dall&apos;utente. <br />
+            Quando l&apos;impianto solare non produce (di notte) o produce poco
+            (brutto tempo) o la corrente richiesta dall&apos;utenza è maggiore di
             quella che può essere fornita in quel momento dal sistema
-            fotovoltaico, si utilizza {"l’energia"} del distributore.
+            fotovoltaico, si utilizza l&apos;energia del distributore.
           </p>
 
           <p>
-            Nel caos di impianti fotovoltaici con accumulo elettrico{" "}
-            {"l’energia"}
-            prodotta dal{"l’impianto"} fotovoltaico viene accumulata con la
-            possibilità per l’utente di prelevare {"l’energia"} necessaria
-            dall’accumulo senza doverla prelevare dalla Rete, anche quando
-            {"l’impianto"} fotovoltaico non sta producendo.
+            Nel caos di impianti fotovoltaici con accumulo elettrico 
+            l&apos;energia
+            prodotta dall&apos;impianto fotovoltaico viene accumulata con la
+            possibilità per l&apos;utente di prelevare l&apos;energia necessaria
+            dall&apos;accumulo senza doverla prelevare dalla Rete, anche quando
+            l&apos;impianto fotovoltaico non sta producendo.
           </p>
 
           <p>
-            Utilizzare l’elettricità e il gas in modo consapevole ed efficiente
+            Utilizzare l&apos;elettricità e il gas in modo consapevole ed efficiente
             significa consumare meglio e far risparmiare la tua azienda, anche a
             livello assicurativo. Alcuni interventi di efficienza energetica
             rispondono inoltre a obblighi normativi, permettono di fare
@@ -99,20 +99,20 @@ function Servizi() {
             installazione e il buon funzionamento degli impianti e
             contribuiscono alla sicurezza in azienda. Dalla fornitura di
             energia, al monitoraggio di consumi e picchi di potenza, fino
-            {"all’analisi"} di efficienza degli impianti, sono diverse le azioni
+            all&apos;analisi di efficienza degli impianti, sono diverse le azioni
             che puoi mettere in campo per limitare i costi di esercizio della
             tua attività e ridurre gli sprechi. E per farlo, mettiamo a tua
             disposizione un consulente energetico capace di orientarti verso la
             soluzione più adatta al tuo lavoro. Il risparmio inizia da qui,
             intervenendo sulle abitudini di consumo e senza interferenze con la
-            produttività, perché un utilizzo efficiente {"dell’energia"}{" "}
+            produttività, perché un utilizzo efficiente dell&apos;energia 
             consente di impiegarne meno a parità di servizio.
           </p>
 
           <p>
             La nostra azienda, dopo ave studiato attentamente i consumi ed il
             profilo energetico del cliente, sviluppa un progetto preliminare
-            completo di business plan con l’indicazione del vantaggio economico
+            completo di business plan con l&apos;indicazione del vantaggio economico
             perseguibile grazie al risparmio ottenuto ed ai benefici fiscali
             legati ad ogni singolo intervento
           </p>
@@ -121,7 +121,7 @@ function Servizi() {
         <article id={service == "2" ? "active" : null}>
           <p>
             La cogenerazione è la produzione combinata di energia elettrica ed
-            energia termica a partire da un’unica fonte di energia primaria. Un
+            energia termica a partire da un&apos;unica fonte di energia primaria. Un
             impianto di cogenerazione, dunque, fornisce sia elettricità che
             calore, garantendo una migliore resa energetica rispetto alle due
             produzioni separate
@@ -132,12 +132,12 @@ function Servizi() {
             richiede di sapere come avviene tradizionalmente la produzione di
             energia elettrica. In una centrale termoelettrica convenzionale si
             brucia del combustibile in una fornace per portare a ebollizione
-            dell’acqua e produrre così vapore. Il vapore mette in moto una
+            dell&apos;acqua e produrre così vapore. Il vapore mette in moto una
             turbina, che a sua volta aziona un generatore, il quale produce
             elettricità. Il problema è che nel corso del processo gran parte
-            dell’energia termica iniziale va perduta, per cui solo il 30-55%
+            dell&apos;energia termica iniziale va perduta, per cui solo il 30-55%
             viene effettivamente convertita in energia elettrica. Il resto
-            finisce disperso come calore nell’ambiente.
+            finisce disperso come calore nell&apos;ambiente.
           </p>
 
           <p>
@@ -154,7 +154,7 @@ function Servizi() {
             gas naturale, GPL e gasolio, o combustibili organici non fossili,
             come biogas, biometano, olio vegetale e biomasse. In futuro è
             probabile che gli impianti di cogenerazione useranno celle a
-            combustibile, che sfruttano la reazione dell’idrogeno con l’ossigeno
+            combustibile, che sfruttano la reazione dell&apos;idrogeno con l&apos;ossigeno
             per produrre sia elettricità che calore.
           </p>
 
@@ -164,11 +164,11 @@ function Servizi() {
 
           <p>
             I vantaggi della cogenerazione sono numerosi. In particolare,
-            l’impiego sul posto di un impianto di cogenerazione permette di:
+            l&apos;impiego sul posto di un impianto di cogenerazione permette di:
             <br />
             <br />
             <b>
-              Migliorare l’efficienza complessiva di utilizzo dell’energia,
+              Migliorare l&apos;efficienza complessiva di utilizzo dell&apos;energia,
               combinando in un solo generatore la produzione di calore e di
               energia elettrica.
               <br />
@@ -185,17 +185,17 @@ function Servizi() {
           </p>
 
           <p>
-            I sistemi di cogenerazione possono alimentare un’ampia varietà di
+            I sistemi di cogenerazione possono alimentare un&apos;ampia varietà di
             processi industriali e manifatturieri e produrre ulteriore energia
             utile, come vapore ad alta pressione, calore di processo ed energia
             meccanica. In particolare un cogeneratore conviene quando si ha un
-            elevato fabbisogno di elettricità e/o calore (come nell’industria
+            elevato fabbisogno di elettricità e/o calore (come nell&apos;industria
             alimentare, cartaria o ceramica). In questi casi un impianto di
             cogenerazione industriale garantisce un notevole risparmio
-            economico, perché aumenta l’efficienza energetica e riduce
+            economico, perché aumenta l&apos;efficienza energetica e riduce
             sensibilmente, a parità di prestazioni, i consumi di combustibile.
-            Passare a un’unità di cogenerazione può far risparmiare fino al 30%
-            sul costo dell’energia, oltre a tagliare le emissioni di CO2.
+            Passare a un&apos;unità di cogenerazione può far risparmiare fino al 30%
+            sul costo dell&apos;energia, oltre a tagliare le emissioni di CO2.
           </p>
 
           <p>
@@ -203,32 +203,32 @@ function Servizi() {
           </p>
 
           <p>
-            L’idea ispiratrice che ha portato alla nascita del “progetto
+            L&apos;idea ispiratrice che ha portato alla nascita del “progetto
             consulenza globale energia” è scaturita dalla riflessione che
-            l’imprenditore moderno, nell’esercizio della propria attività,
+            l&apos;imprenditore moderno, nell&apos;esercizio della propria attività,
             utilizza energia termica ( kW termici) e energia elettrica ( kW
             elettrici) e, visto il continuo aumento dei costi di tale energia,
             necessita di prestazioni consulenziali specialistiche e coordinate
             che rendano funzionali gli impianti preesistenti presso le sedi
             aziendali, ottimizzandone il rendimento e riducendo, sensibilmente,
-            i costi aziendali nel settore dell’energia. In quest’ottica
+            i costi aziendali nel settore dell&apos;energia. In quest&apos;ottica
             Consenergy ha raggruppato al proprio interno molteplici
             professionalità specialistiche già consolidate, avvalendosi ,dove
             necessario, della collaborazione di Aziende produttrici leader nella
             costruzione di apparecchiature per il “risparmio energetico” al fine
-            di affiancare l’imprenditore nell’individuazione, adozione ed
+            di affiancare l&apos;imprenditore nell&apos;individuazione, adozione ed
             applicazione di tecniche di ottimizzazione sistematica della
             gestione aziendale tese al raggiungimento del miglior rapporto
             qualità prezzo nella produzione e acquisto di energia termica ed
             elettrica. Consenergy si propone sul mercato come il primo
             “consulente globale aziendale”, studia le esigenze dei clienti e gli
             offre “prodotti e servizi” tali da assicurare sicuri risparmi e le
-            migliori performance nel settore dell’energia, attuando un ruolo di
+            migliori performance nel settore dell&apos;energia, attuando un ruolo di
             vitale importanza per lo sviluppo delle aziende Consenergy è in
-            grado di assistere l’Azienda a 360 gradi, offrendo la sua opera a
-            costo zero, consentendo, così, all’imprenditore di realizzare un
+            grado di assistere l&apos;Azienda a 360 gradi, offrendo la sua opera a
+            costo zero, consentendo, così, all&apos;imprenditore di realizzare un
             ulteriore risparmio proveniente da un uso più conveniente delle
-            “risorse umane aziendali”. L’azione di Consenergy non si esaurisce
+            “risorse umane aziendali”. L&apos;azione di Consenergy non si esaurisce
             con la prima visita, ma continua nel tempo per il mantenimento degli
             standard realizzati e la verifica periodica di ulteriori possibilità
             di migliorarli.
@@ -246,7 +246,7 @@ function Servizi() {
             ridottissima quantità di ossigeno (parziale gassificazione). Il
             materiale viene portato a temperature comprese tra i 200 e i 1000°C
             (gassificazione completa della biomassa), talvolta immettendo
-            opportune quantità̀ di ossigeno che consentono l’innesco di una
+            opportune quantità̀ di ossigeno che consentono l&apos;innesco di una
             parziale combustione che porta ad un aumento della temperatura. Da
             questo processo si ottengono prodotti gassosi, liquidi e solidi in
             percentuale dipendente dai parametri di reazione.
@@ -262,9 +262,9 @@ function Servizi() {
           </p>
 
           <p>
-            La nostra azienda, dopo ave studiato attentamente la qualita’ e la
-            quantita’ di biomassa disponibile, sviluppa un progetto preliminare
-            completo di business plan con l’indicazione del vantaggio economico
+            La nostra azienda, dopo ave studiato attentamente la qualita&apos; e la
+            quantita&apos; di biomassa disponibile, sviluppa un progetto preliminare
+            completo di business plan con l&apos;indicazione del vantaggio economico
             perseguibile grazie al risparmio ottenuto ed ai benefici fiscali
             legati ad ogni singolo intervento
           </p>
@@ -284,7 +284,7 @@ function Servizi() {
           <p>
             <b>
               La possibilità di valorizzare e sfruttare biomasse di scarto e
-              sottoprodotti per produrre energia, riducendo l’impatto ambientale
+              sottoprodotti per produrre energia, riducendo l&apos;impatto ambientale
               derivante dal trattamento dei rifiuti
               <br />
               <br />
@@ -295,8 +295,8 @@ function Servizi() {
               producono ex novo;
               <br />
               <br />
-              La possibilità di ridurre l’importazione di gas metano, che ha un
-              impatto negativo sull’economia nazionale;
+              La possibilità di ridurre l&apos;importazione di gas metano, che ha un
+              impatto negativo sull&apos;economia nazionale;
               <br />
               <br />
               La possibilità di produrre anche calore. Difatti il biogas può
@@ -305,7 +305,7 @@ function Servizi() {
               <br />
               <br />
               La possibilità di essere erogato in forma continua poiché
-              l’energia da biomasse è regolabile a piacimento e può essere
+              l&apos;energia da biomasse è regolabile a piacimento e può essere
               bloccata quando desiderato, al pari delle energie da fonti
               fossili;
               <br />
@@ -313,7 +313,7 @@ function Servizi() {
               eliminata la CO2, di essere trasformato in biometano. In seguito,
               viene trasportato e utilizzato attraverso le tradizionali
               infrastrutture, consentendo ai Paesi di ridurre le emissioni in
-              alcuni settori difficili, come l’industria pesante e il trasporto
+              alcuni settori difficili, come l&apos;industria pesante e il trasporto
               merci.
             </b>
           </p>
@@ -321,7 +321,7 @@ function Servizi() {
           <p>
             La nostra azienda, dopo aver studiato attentamente i consumi ed il
             profilo energetico del cliente, sviluppa un progetto preliminare
-            completo di business plan con {"l’indicazione"} del vantaggio
+            completo di business plan con l&apos;indicazione del vantaggio
             economico perseguibile grazie al risparmio ottenuto ed ai benefici
             fiscali legati ad ogni singolo intervento.
           </p>

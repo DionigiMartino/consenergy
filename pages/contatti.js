@@ -131,9 +131,9 @@ function Contatti() {
         <div className={contattiStyle.cont__contatti_info_mappa}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12044.477025503622!2d14.21986!3d41.0007629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x239966ffefe2e651!2sA%26G%20Multiservice!5e0!3m2!1sit!2sit!4v1658757699809!5m2!1sit!2sit"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
