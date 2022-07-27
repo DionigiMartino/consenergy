@@ -20,15 +20,15 @@ function Contatti() {
         <ul>
           <li>
             <img src={mail} alt="Mail" />
-            info@consenergy.it
+            customerservice@consenergy.it
           </li>
           <li>
             <img src={home} alt="Sede" />
-            Via Antonio Gramsci 10, presso Parco il Boschetto {"Sant'Anastasia"}
+            Zona Industriale Carinaro
           </li>
           <li>
             <img src={phone} alt="Sede" />
-            <a href="tel:+3908119258198">+39 081 19 25 8198</a>
+            <a href="tel:+393920930367">+39 392 093 0367</a>
           </li>
         </ul>
 
@@ -127,7 +127,17 @@ function Contatti() {
             </Link>
           </li>
         </ul>
+
+        <div className={contattiStyle.cont__contatti_info_mappa}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12044.477025503622!2d14.21986!3d41.0007629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x239966ffefe2e651!2sA%26G%20Multiservice!5e0!3m2!1sit!2sit!4v1658757699809!5m2!1sit!2sit"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
+
       <div className={contattiStyle.cont__contatti_form}>
         <h3>Scrivici</h3>
 

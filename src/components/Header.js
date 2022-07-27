@@ -21,11 +21,11 @@ function Header() {
         </li>
 
         <li onClick={() => openMenu(false)}>
-          <Link href="/agevolazioni-fiscali">Agevolazioni Fiscali</Link>
+          <Link href="/agevolazioni-fiscali">Consulenza su Agevolazioni</Link>
         </li>
 
         <li onClick={() => openMenu(false)}>
-          <Link href="/notizie">Notizie</Link>
+          <Link href="/docs/media/moovy.pdf">Stazioni di Ricarica Elettrica</Link>
         </li>
 
         <li id="cta" onClick={() => openMenu(false)}>
@@ -72,12 +72,16 @@ function Header() {
             <Link href="/servizi">Servizi</Link>
           </li>
 
+          <li>
+            <Link href="/lavori">Lavori</Link>
+          </li>
+
           <li id="dropdown">
-            <Link href="/agevolazioni-fiscali">Agevolazioni Fiscali</Link>
+            <Link href="/agevolazioni-fiscali">Consulenza su Agevolazioni</Link>
           </li>
 
           <li>
-            <Link href="/notizie">Notizie</Link>
+            <Link href="/media/docs/moovy.pdf">Stazioni di Ricarica Elettrica</Link>
           </li>
         </ul>
 

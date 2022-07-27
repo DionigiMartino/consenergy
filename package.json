@@ -8,13 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "git": "git add . && git commit -m upgrade && git push",
-    "sass": "sass --watch ./src/style/input:./src/style/output"
+    "sass": "sass --watch ./src/style/input:./src/style/output",
+    "upload": "npm run git && next export"
   },
   "dependencies": {
     "file-loader": "^6.2.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-medium-image-zoom": "^4.4.3",
     "sass": "^1.52.3",
     "url-loader": "^4.1.1"
   },

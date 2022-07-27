@@ -23,10 +23,12 @@ function Footer() {
             <img src={liveChat} alt="Live chat" />
             Live chat
           </li>
-          <li>
-            <img src={wa} alt="Live chat" />
-            What's App
-          </li>
+          <Link href="https://api.whatsapp.com/send?phone=3920930367">
+            <li>
+              <img src={wa} alt="Live chat" />
+              What's App
+            </li>
+          </Link>
           <li>
             <img src={fb} alt="Live chat" />
             Facebook Chat
@@ -150,13 +152,13 @@ function Footer() {
               <Link href="/servizi">Fotovoltaico</Link>
             </li>
             <li onClick={() => setService("2")}>
-              <Link href="/servizi">Impianti Solare Termico</Link>
+              <Link href="/servizi">Impianti di Cogenerazione</Link>
             </li>
             <li onClick={() => setService("3")}>
-              <Link href="/servizi">Risparmio Energetico</Link>
+              <Link href="/servizi">Impianto di Gassificazione</Link>
             </li>
             <li onClick={() => setService("4")}>
-              <Link href="/servizi">Colonnine Elettriche</Link>
+              <Link href="/servizi">Impianti di Biogas</Link>
             </li>
           </ul>
 
@@ -173,6 +175,11 @@ function Footer() {
           <ul>
             <li>Agevolazioni</li>
 
+            <li>
+              <Link href="/agevolazioni-fiscali">
+                Consulenza su Agevolazioni
+              </Link>
+            </li>
             <li>
               <Link href="media/docs/ACCISEAGEVOLATE.pdf">
                 Accise Agevolate

@@ -1,0 +1,30 @@
+@import "../variables";
+
+.cont__lavori {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 75px auto;
+  justify-content: space-between;
+
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
+
+  & > li {
+    width: 22.5%;
+    height: fit-content;
+
+    @media (max-width: 780px) {
+      width: 100%;
+    }
+
+    & img {
+      width: 100%;
+      border-radius: 15px;
+      height: 100%;
+    }
+  }
+}

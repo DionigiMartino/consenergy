@@ -283,6 +283,79 @@ export default function Home() {
             fiscali legati ad ogni singolo intervento.
           </p>
         </section>
+
+        <section style={{ display: section == "5" ? "flex" : "none" }}>
+          <p>
+            Con colonnine elettriche si definiscono tutte le apparecchiature con
+            cui è possibile ricaricare le batterie dei propri veicoli elettrici
+            o veicoli ibridi. Impariamo a conoscere le colonnine elettriche: con
+            la crescente diffusione di veicoli elettrici e ibridi, è necessario
+            capire come fare il pieno di elettricità.
+          </p>
+
+          <p>
+            Le colonnine elettriche non sono solamente una scelta consapevole di
+            sostenibilità ambientale, ma anche una soluzione per soddisfare una
+            domanda crescente di mercato. Infatti la 2030 agenda, definita
+            dall’ONU per lo sviluppo sostenibile, prevede che entro il 2030 non
+            siano più prodotte automobili a motore endotermico. Il rifornimento
+            può essere effettuato in modo “pubblico” presso le stazioni di
+            ricarica diffuse sul suolo nazionale (anche in luoghi privati
+            destinati ad uso pubblico come i parcheggi dei centri commerciali)
+            oppure in modo del tutto “privato” a casa, mediante{" "}
+            {"l’installazione"}
+            di una colonnina o usufruendo delle prese domestiche o industriali.
+            In entrambi i casi, {"l’alimentazione"} avviene “via cavo”. Questi
+            cavi sono dotati di un sistema di protezione denominato PWM (Pulse
+            Width Modulation - con impulso modulato) che garantisce la sicurezza
+            durante il funzionamento.
+          </p>
+
+          <p>
+            Non esiste una forma standard delle colonnine elettriche: a seconda
+            della destinazione d’uso, le stazioni di ricarica per veicoli
+            elettrici hanno strutture diverse: dalle stazioni di ricarica a
+            parete (dette anche scatole da parete o wall box) installate in
+            garage e parcheggi interrati alle stazioni di ricarica installate su
+            pali o colonne su strade e luoghi pubblici. La ricerca e il
+            progresso però corrono velocemente e sono già al lavoro su sistemi
+            di ricarica ad induzione che, in futuro, potrebbero consentire agli
+            automobilisti di evitare di caricare i cavi a bordo della vettura.
+          </p>
+
+          <p>
+            Tuttavia, se sei in viaggio o fuori casa, è importante trovare e
+            sapere come utilizzare le colonnine elettriche In tal proposito è
+            possibile prevedere che in futuro possa cambiare il modo di
+            viaggiare e di spostarsi, poichè sarà necessario pianificare
+            anzitempo dove fermarsi per “fare il pieno” di elettricità. Di
+            solito, questi dispositivi di ricarica vengono attivati tramite una
+            carta o un’applicazione fornita dal gestore scelto per il servizio.
+            La carta (o {"l’applicazione"}) viene utilizzata per avviare la
+            ricarica e terminare la ricarica alla fine. Consente inoltre di
+            considerare le spese, che di solito sono allocate ad un importo
+            fisso dell’operatore e ad una variabile calcolata in base ai kW/h
+            forniti.
+          </p>
+
+          <p>
+            Il tempo richiesto per effettuare un ciclo di ricarica completo con
+            la modalità di ricarica lenta è di 8 ore. Tuttavia, la maggior parte
+            dei costruttori di auto ha implementato la possibilità di effettuare
+            una ricarica rapida in 30 minuti. Questa modalità permette di le
+            batterie all’80%, così da avere abbastanza energia per effettuare
+            tutti gli spostamenti necessari senza innescare {"l’ansia"} da
+            ricarica.
+          </p>
+
+          <p>
+            La nostra azienda, dopo aver studiato attentamente i consumi ed il
+            profilo energetico del cliente, sviluppa un progetto preliminare
+            completo di business plan con {"l’indicazione"} del vantaggio
+            economico perseguibile grazie al risparmio ottenuto ed ai benefici
+            fiscali legati ad ogni singolo intervento.
+          </p>
+        </section>
       </div>
 
       <div className={serviziStyle.cont__servizi}>

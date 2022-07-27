@@ -128,77 +128,7 @@ function Agevolazioni() {
           conferma per il secondo trimestre 2022 l’agevolazione nei confronti
           delle imprese energivore e introduce un contributo straordinario,
           sotto forma di credito d’imposta, anche per le imprese a forte consumo
-          di gas naturale (cd. imprese gasivore). Per poter accedere
-          all’agevolazione è necessario che la media dei costi per kWh della
-          componente energia elettrica relativi al primo trimestre 2022, al
-          netto delle imposte e degli eventuali sussidi, sia superiore del 30%
-          rispetto alla media di quelli relativi al primo trimestre del 2019.
-          Alle imprese energivore che soddisfano questo requisito spetta un
-          credito d’imposta pari al 25% delle spese sostenute per la componente
-          energetica acquistata ed effettivamente utilizzata nel secondo
-          trimestre del 2022. Alle imprese a forte consumo di gas naturale è
-          riconosciuto, a parziale compensazione dei maggiori oneri sostenuti
-          per l'acquisto del gas naturale, un contributo straordinario, sotto
-          forma di credito di imposta, pari al 20 per cento della spesa
-          sostenuta per l'acquisto del medesimo gas, consumato nel secondo
-          trimestre solare dell'anno 2022, per usi energetici diversi dagli usi
-          termoelettrici, qualora il prezzo di riferimento del gas naturale,
-          calcolato come media, riferita al primo trimestre 2022, dei prezzi di
-          riferimento del Mercato Infragiornaliero (MI-GAS) pubblicati dal
-          Gestore del mercati energetici (GME), abbia subito un incremento
-          superiore al 30 per cento del corrispondente prezzo medio riferito al
-          medesimo trimestre dell'anno 2019. Da verifiche effettuate sui
-          suddetti prezzi del mercato MI-GAS l’incremento del 30% è
-          abbondantemente superato (incremento del 376,77%). Il Decreto Ucraina
-          bis (Decreto Legge 21/2022) incrementa la misura delle agevolazioni.
-          Per le imprese energivore e gasivore i contributi straordinari già
-          disposti dal decreto “Energia” (articoli 4 e 5 del Dl n. 17/2022) sono
-          rideterminati nella misura del 25% (anziché 20) per i consumi di
-          energia e del 20% (anziché 15) per il gas naturale. Il Decreto Ucraina
-          bis prevede, inoltre, analoghi contributi, sempre sotto forma di
-          crediti d’imposta, a parziale compensazione delle spese sostenute per
-          l’acquisto dell’energia elettrica o del gas naturale acquistati e
-          consumati nel secondo trimestre 2022, rispettivamente, da parte delle
-          imprese non energivore di potenza disponibile non inferiore a 16,5 Kw
-          (nella misura del 12%) e delle imprese non gasivore (nella misura del
-          20%). Si ritiene che le norme sopra indicate non ostino all’utilizzo
-          in compensazione dei relativi crediti d’imposta in un momento
-          antecedente rispetto alla conclusione del trimestre di riferimento, a
-          condizione che, nel rispetto di tutti gli altri requisiti previsti
-          dalle norme a tal fine applicate, le spese per l’acquisto dell’energia
-          elettrica e del gas naturale consumati, con riferimento alle quali è
-          calcolato il credito d’imposta spettante, possano considerarsi
-          sostenute, secondo i criteri di cui all’articolo 109 del TUIR, nel
-          predetto trimestre e il loro sostenimento sia documentato mediante il
-          possesso della/e fattura/e di acquisto. Per accedere al credito
-          d'imposta per energia elettrica del primo trimestre 2022, solo per gli
-          energivori, bisogna produrre le fatture dell'ultimo trimestre 2021 e
-          dell'ultimo trimestre 2019. Per accedere al credito d'imposta per
-          energia elettrica del secondo trimestre 2022, per l'energia elettrica
-          prelevata e autoprodotta, per gli utenti energivori e non, bisogna
-          produrre le fatture del primo trimestre 2022 e del primo trimestre
-          2019 e la quantità di energia autoconsumata. In tal caso l'incremento
-          del costo per kWh di energia elettrica prodotta e autoconsumata è
-          calcolato con riferimento alla variazione del prezzo unitario dei
-          combustibili acquistati ed utilizzati dall'impresa per la produzione
-          della medesima energia elettrica e il credito d'imposta è determinato
-          con riguardo al prezzo convenzionale dell'energia elettrica pari alla
-          media, relativa al secondo trimestre 2022, del prezzo unico nazionale
-          (PUN) dell'energia elettrica. In tal caso bisogna fornire il prezzo
-          medio del combustibile utilizzato per autoprodurre energia elettrica
-          per il primo trimestre 2022 e per il primo trimestre 2019. Per
-          accedere al credito d'imposta per il gas naturale, per gli utenti
-          gasivori e non, solo per il secondo trimestre 2022, come indicato in
-          precedenza, si deve ricavare dal sito del GME sezione gas la media
-          aritmetica del prezzo del gas del mercato infragiornaliero (MI-GAS)
-          rispettivamente del primo trimestre 2022 e del primo trimestre 2019
-          verificando che per il primo trimestre 2022 la media sia superiore del
-          30% rispetto alla media del primo trimestre 2019. Come detto sopra
-          l'ipotesi è verificata abbondantemente e quindi sull'importo delle
-          fatture del secondo trimestre 2022 (anche mese per mese e non
-          necessariamente per il trimestre) si può calcolare e chiedere un
-          credito d'imposta del 20% dell'importo delle fatture con le modalità
-          sopra riportate.
+          di gas naturale (cd. imprese gasivore). 
         </article>
       </section>
     </div>

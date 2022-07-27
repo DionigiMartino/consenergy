@@ -1,0 +1,30 @@
+.cont__lavori {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 75px auto;
+  justify-content: space-between;
+}
+@media (max-width: 780px) {
+  .cont__lavori {
+    flex-direction: column;
+  }
+}
+.cont__lavori > li {
+  width: 22.5%;
+  height: fit-content;
+}
+@media (max-width: 780px) {
+  .cont__lavori > li {
+    width: 100%;
+  }
+}
+.cont__lavori > li img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=lavori.module.css.map */
