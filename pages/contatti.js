@@ -143,14 +143,14 @@ function Contatti() {
 
         <hr />
 
-        <form>
+        <form action="./php/contatti.php">
           <input
             type="text"
             name="nominativo"
             id="left"
             placeholder="Nome - Cognome"
           />
-          <input type="text" name="mail" id="right" placeholder="Tel." />
+          <input type="text" name="tel" id="right" placeholder="Tel." />
 
           <input
             type="text"

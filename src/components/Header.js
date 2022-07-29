@@ -88,7 +88,7 @@ function Header() {
 
           <li>
             <Link href="/media/docs/moovy.pdf">
-              Stazioni di Ricarica Elettrica
+              Stazioni di Ricarica 
             </Link>
           </li>
         </ul>
