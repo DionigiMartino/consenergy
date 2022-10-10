@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 import contattiStyle from "../src/style/output/contatti.module.css";
-import mail from "../public/media/img/mail.svg";
-import home from "../public/media/img/home.svg";
-import phone from "../public/media/img/phone.svg";
 import Link from "next/link";
 
 function LavoraConNoi() {

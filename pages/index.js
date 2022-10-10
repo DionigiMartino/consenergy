@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import introModule from "../src/style/output/introModule.module.css";
 import serviziStyle from "../src/style/output/servizi.module.css";
-import Link from "next/link";
 import Intro from "../src/components/Intro";
 
 export default function Home() {

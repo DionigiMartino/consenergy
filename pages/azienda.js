@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import chiSiamo from "../src/style/output/chisiamo.module.css";
 import axpoLogo from '../public/media/img/axpo.svg'
 import dufercoLogo from "../public/media/img/duferco.jpeg";
-import bukheLogo from "../public/media/img/bukhe.svg";
 import moovyLogo from "../public/media/img/moovy.jpg";
 import aegLogo from "../public/media/img/logoaeg.svg";
 
