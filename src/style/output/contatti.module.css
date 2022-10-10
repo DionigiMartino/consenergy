@@ -76,6 +76,11 @@
   font-weight: 400;
   line-height: 20px;
 }
+@media (max-width: 780px) {
+  .cont__contatti_info > ul > li {
+    letter-spacing: unset;
+  }
+}
 .cont__contatti_info > ul > li > a {
   cursor: pointer;
 }

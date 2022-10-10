@@ -30,6 +30,11 @@ function Contatti() {
             <img src={phone} alt="Sede" />
             <a href="tel:+393920930367">+39 392 093 0367</a>
           </li>
+
+          <li>
+            <img src={phone} alt="Sede" />
+            <a href="tel:+390812597573">+39 081 259 7573</a>
+          </li>
         </ul>
 
         <ul id="social">
